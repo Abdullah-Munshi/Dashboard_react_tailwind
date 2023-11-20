@@ -19,3 +19,7 @@
 .mobile-bar:hover svg {
   stroke: #fae676;
 }
+.main-menu li.active a,
+.main-menu li a:hover {
+  color: #fae676;
+}

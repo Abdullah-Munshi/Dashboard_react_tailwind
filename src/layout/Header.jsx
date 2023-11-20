@@ -10,7 +10,26 @@ const Header = () => {
           <img src={logo} alt="logo" className="h-[50px] lg:hidden" />
         </Link>
         <div className="fixed h-screen w-[290px] bg-white right-0 top-0 z-50 md:relative md:bg-transparent md:h-auto md:w-auto">
-          offcanvas menu
+          <ul className="main-menu md:flex md:items-center md:justify-end md:space-x-10 [&>li>a]:text-white">
+            <li className="active">
+              <a href="#">Dashboard</a>
+            </li>
+            <li>
+              <a href="#">My Packs</a>
+            </li>
+            <li>
+              <a href="#">My Referrals</a>
+            </li>
+            <li>
+              <a href="#">Products</a>
+            </li>
+            <li>
+              <a href="#">Activity</a>
+            </li>
+            <li>
+              <a href="#">Logout</a>
+            </li>
+          </ul>
         </div>
         <button class="mobile-bar md:hidden">
           <svg
