@@ -1,7 +1,41 @@
 import React from "react";
-
-const Statistics = () => {
-  return <div>Statistics</div>;
+import coin from "../../assets/coin.png";
+const Statistics = ({ bg }) => {
+  let cardBg = "",
+    textColor = "",
+    hr = "";
+  if (bg && bg === "gold") {
+    cardBg = "bg-gradient-gold";
+    textColor = "text-black";
+    hr = "bg-gradient-black";
+  } else {
+    cardBg = "bg-black";
+    textColor = "text-white";
+    hr = "bg-gradient-gold";
+  }
+  return (
+    <div
+      className={`${cardBg} border-[3px] border-secondary shadow-one rounded-2xl_next`}
+    >
+      <div className="grid grid-cols-[auto_90px] gap-4 items-center px-5 py-4">
+        <div className={`${textColor}`}>
+          <strong className="block text-[28px] font-bold mb-[2px">
+            123456
+          </strong>
+          <span className="block text-[15px] font-normal tracking-[.48px] opacity-60">
+            Total Packs
+          </span>
+        </div>
+        <img className="max-w-full" src={coin} alt="Coin" />
+      </div>
+      <div className={`${hr} w-full h-[3px]`}></div>
+      <div className="px-5 py-3">
+        <p className={`${textColor} text-base tracking-[.48px] m-0`}>
+          50 New today
+        </p>
+      </div>
+    </div>
+  );
 };
 
 export default Statistics;

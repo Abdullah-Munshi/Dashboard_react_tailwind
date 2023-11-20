@@ -24,6 +24,9 @@ module.exports = {
 
         "btn-gradient-black":
           "linear-gradient(0deg, rgba(60, 47, 15, 0.20) 0%, rgba(60, 47, 15, 0.20) 100%), linear-gradient(116deg, #333229 16.5%, #1C1B19 24.34%, #7C7C7C 48.24%, #000 76.5%, #090909 83.9%)",
+
+        "gradient-black":
+          "linear-gradient(116deg, #3A3933 16.5%, #E9E3D7 24.34%, #FFFCDA 48.24%, #DCBA86 76.5%, #F9F293 83.9%)",
       },
       borderRadius: {
         "2xl_next": "20px",
