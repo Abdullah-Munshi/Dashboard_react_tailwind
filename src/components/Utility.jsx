@@ -8,7 +8,7 @@ export const TitlePrimary = ({ children }) => {
 
 export const TitleSecondary = ({ children }) => {
   return (
-    <h3 className="bg-gradient-gold text-secondary bg-clip-text text-transparent uppercase font-Bungee text-2xl m-0">
+    <h3 className="bg-gradient-gold text-secondary bg-clip-text text-transparent uppercase font-Bungee text-xl lg:text-2xl m-0">
       {children}
     </h3>
   );
@@ -37,8 +37,8 @@ export const Overlay = ({ overlay }) => {
   return (
     <div
       className={`${
-        overlay ? "opacity-100" : "opacity-0"
-      } fixed w-screen h-screen top-0 left-0 right-0 bg-black/60 transition duration-300 z-40`}
+        overlay ? "opacity-100 visible" : "opacity-0 invisible"
+      } fixed w-screen h-screen top-0 left-0 right-0 bg-black/60 transition duration-300 z-40 `}
     ></div>
   );
 };

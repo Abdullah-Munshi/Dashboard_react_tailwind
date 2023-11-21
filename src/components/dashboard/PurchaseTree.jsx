@@ -1,5 +1,5 @@
 import React from "react";
-import { CardBlack } from "../Utility";
+import { Button, CardBlack } from "../Utility";
 import user from "../../assets/member.png";
 import bnb from "../../assets/bnb.png";
 import recycle from "../../assets/recycle.png";
@@ -10,6 +10,15 @@ const PurchaseTree = () => {
   return (
     <CardBlack>
       <div className="p-6">
+        <div className="flex items-center justify-between mb-6">
+          <h4 className="text-xl lg:text-2xl font-Bungee text-white uppercase m-0 tracking-[.9px]">
+            Pack #123
+          </h4>
+
+          <Button className="bg-btn-gradient-gold rounded-[10px] border-1 border-black text-black text-base font-bold tracking-[.6px] px-4 py-3">
+            Purchased
+          </Button>
+        </div>
         <div className="tree">
           <div className="tree-rw text-center">
             <div className="member w-[150px] mx-auto">
