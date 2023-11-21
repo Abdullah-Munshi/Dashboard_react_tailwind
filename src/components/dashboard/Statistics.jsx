@@ -3,19 +3,22 @@ import coin from "../../assets/coin.png";
 const Statistics = ({ bg }) => {
   let cardBg = "",
     textColor = "",
-    hr = "";
+    hr = "",
+    border = "";
   if (bg && bg === "gold") {
     cardBg = "bg-gradient-gold";
     textColor = "text-black";
-    hr = "bg-gradient-black";
+    hr = "bg-[rgba(46,46,45,0.9)]";
+    border = "border-[rgba(46,46,45,0.9)]";
   } else {
     cardBg = "bg-black";
     textColor = "text-white";
     hr = "bg-gradient-gold";
+    border = "border-secondary";
   }
   return (
     <div
-      className={`${cardBg} border-[3px] border-secondary shadow-one rounded-2xl_next`}
+      className={`${cardBg} border-[3px] ${border} shadow-one rounded-2xl_next`}
     >
       <div className="grid grid-cols-[auto_90px] gap-4 items-center px-5 py-4">
         <div className={`${textColor}`}>
