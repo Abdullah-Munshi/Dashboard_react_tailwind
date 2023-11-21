@@ -5,13 +5,13 @@ import CopyLink from "./CopyLink";
 const Announcement = () => {
   return (
     <CardBlack>
-      <div className="p-8 grid grid-cols-[250px_auto] gap-8 items-center">
+      <div className="p-6 md:p-8 grid lg:grid-cols-[250px_auto] gap-8 items-center">
         <div className="text-center">
           <img className="max-w-[200px] mx-auto" src={mike} alt="Mike" />
         </div>
 
         <div>
-          <div className="flex justify-between items-start mb-6">
+          <div className="md:flex justify-between items-start mb-6 space-y-3 md:space-y-0">
             <TitleSecondary>
               Your Unique <br /> Referral Link
             </TitleSecondary>

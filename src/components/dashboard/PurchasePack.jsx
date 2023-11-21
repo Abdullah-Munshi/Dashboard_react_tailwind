@@ -9,11 +9,11 @@ const PurchasePack = () => {
     <CardGold>
       <div className="p-6 relative">
         <img
-          className="absolute right-14 -top-8 w-[110px]"
+          className="absolute right-0 sm:right-14 -top-8 w-[80px] sm:w-[110px]"
           src={coin2}
           alt="coin"
         />
-        <div className="black mb-14">
+        <div className="black mb-8 sm:mb-14">
           <TitleSecondary>Purchase Packs</TitleSecondary>
         </div>
         <div className="flex items-center justify-between mb-8">

@@ -9,9 +9,12 @@ const AccountDetails = () => {
       </div>
       <div>
         <ul>
-          {detailsRow.map((row) => {
+          {detailsRow.map((row, index) => {
             return (
-              <li className="odd:bg-[#2D2B21] grid grid-cols-2 gap-4 text-white tracking-[.6px] font-semibold text-base px-5 py-2">
+              <li
+                key={index}
+                className="odd:bg-[#2D2B21] grid grid-cols-2 gap-4 text-white tracking-[.6px] font-semibold text-base px-6 py-2"
+              >
                 <span className="block">Text 12345</span>
                 <span className="block text-right">Answer</span>
               </li>

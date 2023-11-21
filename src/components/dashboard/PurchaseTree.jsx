@@ -35,8 +35,8 @@ const PurchaseTree = () => {
               <path
                 d="M1 88.168V55.668H137M273 88.168V55.668H137M137 55.668V0.167969"
                 stroke="white"
-                stroke-width="2"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinejoin="round"
               />
             </svg>
           </div>
@@ -71,8 +71,8 @@ const PurchaseTree = () => {
           </div>
 
           <div className="text-center mt-16 mb-14">
-            <div class="flex justify-between max-w-[200px] bg-[#4F4F4F] rounded-2xl_next px-4 py-3 mx-auto">
-              <button class="bg-transparent rounded-[5px]">
+            <div className="flex justify-between max-w-[200px] bg-[#4F4F4F] rounded-2xl_next px-4 py-3 mx-auto">
+              <button className="bg-transparent rounded-[5px]">
                 <img
                   src={arwLeft}
                   alt="left"
@@ -81,12 +81,16 @@ const PurchaseTree = () => {
               </button>
               <input
                 type="text"
-                readonly=""
-                class="border-0 h-[30px] w-full text-white text-2xl font-extrabold bg-transparent outline-none text-center"
-                value="01"
+                readOnly=""
+                className="border-0 h-[30px] w-full text-white text-2xl font-extrabold bg-transparent outline-none text-center"
+                placeholder="01"
               />
-              <button class="bg-transparent rounded-[5px]">
-                <img src={arwRight} alt="Right" class="w-[40px] basis-[40px]" />
+              <button className="bg-transparent rounded-[5px]">
+                <img
+                  src={arwRight}
+                  alt="Right"
+                  className="w-[40px] basis-[40px]"
+                />
               </button>
             </div>
           </div>

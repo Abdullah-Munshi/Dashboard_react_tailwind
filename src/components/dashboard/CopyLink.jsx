@@ -2,7 +2,7 @@ import React from "react";
 
 const CopyLink = ({ title, link }) => {
   return (
-    <div className="relative">
+    <div className="relative pr-14">
       <h4 className="text-primary text-[18px] font-bold">{title}</h4>
       <input
         className="bg-transparent border-0 outline-none text-white text-[15px] font-thin w-full h-7"
@@ -11,8 +11,8 @@ const CopyLink = ({ title, link }) => {
         readOnly
       />
 
-      <button className="bg-gradient-gold rounded-[10px] text-black text-base font-bold tracking-[.6px] px-4 py-2 inline-flex items-center space-x-3 absolute right-0 bottom-0">
-        <span>Copy</span>
+      <button className="bg-gradient-gold rounded-[10px] text-black text-base font-bold tracking-[.6px] px-3 md:px-4 py-2 inline-flex items-center md:space-x-3 absolute right-0 bottom-0">
+        <span className="hidden md:inline-block">Copy</span>
         <svg
           width="24"
           height="24"
