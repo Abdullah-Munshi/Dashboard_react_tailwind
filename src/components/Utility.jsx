@@ -32,3 +32,13 @@ export const CardGold = ({ children }) => {
     </div>
   );
 };
+
+export const Overlay = ({ overlay }) => {
+  return (
+    <div
+      className={`${
+        overlay ? "opacity-100" : "opacity-0"
+      } fixed w-screen h-screen top-0 left-0 right-0 bg-black/60 transition duration-300 z-40`}
+    ></div>
+  );
+};

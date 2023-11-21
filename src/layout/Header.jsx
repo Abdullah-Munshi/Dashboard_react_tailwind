@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "react-responsive";
 import ShortHeaderInfo from "../components/dashboard/ShortHeaderInfo";
 import logo from "../assets/logo.png";
 import logoLong from "../assets/logo-long.png";
@@ -8,15 +9,18 @@ import wallet from "../assets/wallet.png";
 import user from "../assets/user.png";
 import telegram from "../assets/telegram.png";
 import Drawer from "../components/dashboard/Drawer";
+import { Overlay } from "../components/Utility";
 
 const Header = () => {
   const [drawer, setDrawer] = useState(false);
+  const isSmallScreen = useMediaQuery({ maxWidth: 1023 });
   const closeDrawer = () => {
     setDrawer(false);
   };
   return (
     <header className="bg-[#1B1B1B] px-4 py-4 md:px-6">
-      <div className="flex items-center justify-between ">
+      <Overlay overlay={drawer && isSmallScreen} />
+      <div className="flex items-center justify-between relative z-50">
         <Link>
           <img
             src={logoLong}
@@ -55,11 +59,12 @@ const Header = () => {
 
         <div
           className={`${
-            drawer ? "translate-x-0" : "translate-x-full"
+            drawer && isSmallScreen ? "translate-x-0" : "translate-x-full"
           } fixed h-screen w-[290px] bg-black right-0 top-0 z-50 p-6 transition duration-300`}
         >
           <Drawer onCloseDrawer={closeDrawer} />
         </div>
+
         <button
           onClick={() => setDrawer(true)}
           className="mobile-bar ml-auto mr-4 lg:hidden"
