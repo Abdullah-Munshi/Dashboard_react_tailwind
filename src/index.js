@@ -5,13 +5,18 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Dashboard from "./pages/Dashboard";
 import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import Membership from "./pages/Membership";
 const router = createBrowserRouter([
   { path: "/login", element: <Login /> },
   {
     path: "/",
     element: <Dashboard />,
+  },
+  {
+    path: "/membership",
+    element: <Membership />,
   },
 ]);
 

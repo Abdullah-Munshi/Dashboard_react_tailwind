@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../components/Utility";
 import bgLoginPge from "../assets/bg-login-pge.webp";
 import logo from "../assets/logo.png";
 import brandText from "../assets/brand-text.png";
@@ -55,18 +54,12 @@ const Login = () => {
                   <p className='text-base text-black font-semibold'>
                     1. Connect BSC Wallet
                   </p>
-                  <Button className='text-shadow-one text-primary bg-btn-gradient-black rounded-lg font-Bungee font-normal tracking-[1.4px] uppercase text-base_next leading-tight px-6 py-4 inline-block drop-shadow-btn border border-black w-[280px]'>
-                    Connect Wallet
-                  </Button>
                 </div>
 
                 <div className='text-center space-y-3'>
                   <p className='text-base text-black font-semibold'>
                     2. Authenticate Wallet
                   </p>
-                  <Button className='text-shadow-one text-primary bg-btn-gradient-black rounded-lg font-Bungee font-normal tracking-[1.4px] uppercase text-base_next leading-tight px-6 py-4 inline-block drop-shadow-btn border border-black w-[280px]'>
-                    Login Now
-                  </Button>
                 </div>
               </div>
             </div>

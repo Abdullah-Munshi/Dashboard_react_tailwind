@@ -17,12 +17,10 @@ import st1 from "../assets/st-1.png";
 import st2 from "../assets/st-2.png";
 import st3 from "../assets/st-3.png";
 import st4 from "../assets/st-4.png";
+import TierActive from "../components/dashboard/TierActive";
+import MembershipBlk from "../components/dashboard/MembershipBlk";
 
-import PurchasePack from "../components/dashboard/PurchasePack";
-import CopyLink from "../components/dashboard/CopyLink";
-import DetailsTable from "../components/dashboard/DetailsTable";
-
-const Dashboard = () => {
+const Membership = () => {
   return (
     <div className='bg-[#0B002B] font-trunoRegular'>
       <Header />
@@ -75,34 +73,46 @@ const Dashboard = () => {
           </div>
           <div className='space-y-12'>
             <div>
-              <PurchasePack />
-            </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-7'>
-              <div className='space-y-6 md:space-y-9'>
-                <div>
-                  <TitlePrimary>Your Unique Referral Link</TitlePrimary>
-
-                  <div className='bg-gradient-five rounded-lg_next border border-black p-5 md:p-6 space-y-5'>
-                    <CopyLink
-                      title='Link to home page'
-                      link='https://app.vilocityglobal.io/home/username'
-                    />
-                    <CopyLink
-                      title='Link to home page'
-                      link='https://app.vilocityglobal.io/home/username'
-                    />
-                  </div>
-                </div>
-                <div>
-                  <TitlePrimary>My Details</TitlePrimary>
-                  <div>
-                    <DetailsTable list={[0, 0, 0, 0, 0, 0, 0, 0]} />
-                  </div>
-                </div>
+              <TitlePrimary>My Memberships</TitlePrimary>
+              <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6 xl:gap-7'>
+                <MembershipBlk
+                  id='7'
+                  activeTiers='2'
+                  totalClaimed='234'
+                  totalPending='134'
+                  totalMembership='38229'
+                />
+                <MembershipBlk
+                  id='7'
+                  activeTiers='2'
+                  totalClaimed='234'
+                  totalPending='134'
+                  totalMembership='38229'
+                />
+                <MembershipBlk
+                  id='7'
+                  activeTiers='2'
+                  totalClaimed='234'
+                  totalPending='134'
+                  totalMembership='38229'
+                />
               </div>
-              <div>
-                <TitlePrimary>Membership Stats</TitlePrimary>
-                <DetailsTable list={[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]} />
+            </div>
+            <div>
+              <TitlePrimary>Viewing Membership #7</TitlePrimary>
+              <div className='grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-6 lg:gap-7 items-start'>
+                <MembershipBlk
+                  id='7'
+                  activeTiers='2'
+                  totalClaimed='234'
+                  totalPending='134'
+                  totalMembership='38229'
+                />
+                <div className='space-y-8'>
+                  <TierActive />
+                  <TierActive />
+                  <TierActive />
+                </div>
               </div>
             </div>
           </div>
@@ -112,4 +122,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Membership;

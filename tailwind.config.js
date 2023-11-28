@@ -20,6 +20,10 @@ module.exports = {
         "gradient-one": "linear-gradient(180deg, #F6BC18 0%, #ED1C24 100%)",
         "gradient-two":
           "linear-gradient(180deg, rgba(18, 52, 120, 0.9) 0%, rgba(5, 26, 71, 0.9) 100%)",
+        "gradient-three": "linear-gradient(45deg, #F6BC18 0%, #ED1C24 100%)",
+        "gradient-four": "linear-gradient(180deg, #194399 0%, #162553 100%)",
+        "gradient-five": "linear-gradient(180deg, #DF7900 0%, #F6BC18 100%)",
+        "gradient-six": "linear-gradient(180deg, #F6BC18 0%, #DF7900 100%)",
       },
       borderRadius: {
         lg_next: "10px",

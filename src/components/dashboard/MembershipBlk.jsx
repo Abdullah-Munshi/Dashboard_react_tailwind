@@ -27,7 +27,7 @@ const BlkTwo = ({ value, label }) => {
   );
 };
 
-const Membership = ({
+const MembershipBlk = ({
   id,
   activeTiers,
   totalClaimed,
@@ -71,4 +71,4 @@ const Membership = ({
   );
 };
 
-export default Membership;
+export default MembershipBlk;

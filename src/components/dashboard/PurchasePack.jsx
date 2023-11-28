@@ -1,47 +1,48 @@
 import React from "react";
-import { Button, CardGold, TitleSecondary } from "../Utility";
-import coin2 from "../../assets/coin2.png";
 import plus from "../../assets/plus.png";
 import minus from "../../assets/minus.png";
+import packTrans from "../../assets/pack-trans.png";
 
 const PurchasePack = () => {
   return (
-    <CardGold>
-      <div className="p-6 relative">
-        <img
-          className="absolute right-0 sm:right-14 -top-8 w-[80px] sm:w-[110px]"
-          src={coin2}
-          alt="coin"
-        />
-        <div className="black mb-8 sm:mb-14">
-          <TitleSecondary>Purchase Packs</TitleSecondary>
+    <div className='bg-gradient-three relative rounded-[20px] box-shadow-[0px_10px_10px_0px_rgba(0,0,0,0.10)] overflow-hidden'>
+      <div className='p-5 md:p-6 lg:p-8 pt-4 md:pt-5 lg:pt-7 relative'>
+        <h3 className='text-white text-shadow-three font-trunoSemibold tracking-[.9px] mb-4 text-[24px] md:text-3xl'>
+          Purchase Memberships
+        </h3>
+        <div className='mb-7'>
+          <strong className='block text-white tracking-[1.95px] text-shadow-four leading-tight text-[50px] md:text-[60px] font-trunoSemibold'>
+            $50
+          </strong>
+          <span className='tracking-[.54px] text-base text-white font-trunoRegular block'>
+            Cost Per Pack
+          </span>
         </div>
-        <div className="flex items-center justify-between mb-8">
-          <p className="text-black font-medium text-2xl m-0">$30 Per Pack</p>
-          <div className="grid grid-cols-[50px_auto_50px] max-w-[160px]">
-            <button className="bg-[#222020] rounded-[5px] inline-flex items-center justify-center w-[45px] h-[45px]">
-              <img src={minus} alt="-" className="img-fluid" />
-            </button>
-            <input
-              type="text"
-              value="1"
-              readOnly
-              className="border-0 h-[45px] w-full text-black text-3xl font-extrabold bg-transparent outline-none text-center"
-            />
-            <button className="bg-[#222020] rounded-[5px] inline-flex items-center justify-center w-[45px] h-[45px]">
-              <img src={plus} alt="+" className="img-fluid" />
-            </button>
-          </div>
+        <div className='grid grid-cols-[50px_auto_50px] max-w-[160px] mb-8'>
+          <button className='bg-[#312D2D] hover:bg-[#123377] transition duration-200 rounded-[5px] inline-flex items-center justify-center w-[45px] h-[45px]'>
+            <img src={minus} alt='-' className='img-fluid' />
+          </button>
+          <input
+            type='text'
+            value='1'
+            readOnly
+            className='border-0 h-[45px] w-full text-black text-3xl font-extrabold bg-transparent outline-none text-center'
+          />
+          <button className='bg-[#312D2D] hover:bg-[#123377] transition duration-200 rounded-[5px] inline-flex items-center justify-center w-[45px] h-[45px]'>
+            <img src={plus} alt='+' className='img-fluid' />
+          </button>
         </div>
-
-        <Button className="text-shadow-one text-primary bg-btn-gradient-black rounded-lg font-Bungee font-normal tracking-[1.4px] uppercase text-base_next leading-tight px-6 py-5 drop-shadow-btn border border-black inline-flex justify-between w-full mb-5">
-          <span>Purchase Now</span> <span>$30</span>
-        </Button>
-        <p className="text-center text-black text-lg font-medium tracking-[.6px]">
-          You will spend 1.4 bnb for this purchase
-        </p>
+        <button className='bg-gradient-four border-2 border-white drop-shadow-[drop-shadow(10px_10px_30px_rgba(0,0,0,0.30)] rounded-lg_next text-lg font-trunoSemibold uppercase text-white inline-flex justify-between items-center min-w-[300px] px-6 py-3  h-[60px] text-shadow-one'>
+          <span>Purchase now</span>{" "}
+          <span className='inline-block ml-3'>$50</span>
+        </button>
       </div>
-    </CardGold>
+      <img
+        className='absolute pack-trans-img hidden lg:block'
+        src={packTrans}
+        alt='img'
+      />
+    </div>
   );
 };
 
