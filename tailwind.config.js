@@ -13,8 +13,8 @@ module.exports = {
         base_next: "1.0625rem",
       },
       fontFamily: {
-        Poppins: ["Poppins", "sans-serif"],
-        Bungee: ["Bungee", "sans-serif"],
+        trunoRegular: ["truenoRegular", "sans-serif"],
+        trunoSemibold: ["truenoSemibold", "sans-serif"],
       },
       backgroundImage: {
         "gradient-gold":

@@ -7,6 +7,17 @@
     font-family: "Poppins", "sans-serif";
   }
 }
+@font-face {
+  font-family: truenoRegular;
+  src: url(./assets/fonts/TruenoRg.woff);
+}
+@font-face {
+  font-family: truenoSemibold;
+  src: url(./assets/fonts/TruenoSBd.woff);
+}
+body {
+  /* font-family: truenoRegular, "sans-serif"; */
+}
 .text-shadow-one {
   text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4);
 }
