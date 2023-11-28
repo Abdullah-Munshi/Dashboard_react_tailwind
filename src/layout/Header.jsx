@@ -17,11 +17,15 @@ const Header = () => {
     setDrawer(false);
   };
   return (
-    <header className='bg-white px-4 py-3 md:px-6'>
+    <header className='bg-white px-4 py-3 md:px-6 xl:px-7'>
       <Overlay overlay={drawer && isSmallScreen} />
       <div className='flex items-center justify-between relative z-50'>
         <Link>
-          <img src={logo} alt='logo' className='max-h-[80px] max-w-[250px]' />
+          <img
+            src={logo}
+            alt='logo'
+            className='max-w-[100px] lg:max-h-[80px] lg:max-w-[250px]'
+          />
         </Link>
         <div className='hidden lg:block ml-auto mr-8 space-y-3'>
           <div className='flex items-center justify-end space-x-5 xl:space-x-8'>
@@ -58,7 +62,7 @@ const Header = () => {
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 24 24'
             fill='none'
-            stroke='#ffffff'
+            stroke='#123377'
             strokeWidth='2'
             strokeLinecap='round'
             strokeLinejoin='round'
