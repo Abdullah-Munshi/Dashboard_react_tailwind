@@ -71,7 +71,7 @@ const Membership = () => {
               </div>
             </div>
           </div>
-          <div className='space-y-12'>
+          <div className='space-y-8 md:space-y-12'>
             <div>
               <TitlePrimary>My Memberships</TitlePrimary>
               <div className='grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6 xl:gap-7'>
@@ -100,7 +100,7 @@ const Membership = () => {
             </div>
             <div>
               <TitlePrimary>Viewing Membership #7</TitlePrimary>
-              <div className='grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-6 lg:gap-7 items-start'>
+              <div className='grid grid-cols-1 lg:grid-cols-[1fr_2fr] xl:grid-cols-1 2xl:grid-cols-[1fr_2fr] gap-6 lg:gap-7 items-start'>
                 <MembershipBlk
                   id='7'
                   activeTiers='2'

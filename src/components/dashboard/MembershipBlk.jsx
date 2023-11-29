@@ -36,7 +36,7 @@ const MembershipBlk = ({
 }) => {
   return (
     <div
-      className='rounded-lg_next overflow-hidden'
+      className='rounded-lg_next overflow-hidden bg-cover'
       style={{
         backgroundImage: `url(${bgMembership})`,
         backgroundPosition: "center -15px",

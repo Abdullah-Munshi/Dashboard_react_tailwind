@@ -49,7 +49,7 @@ const Drawer = ({ onCloseDrawer }) => {
         <ShortHeaderInfo icon={user} title='Hey, ' value='helloword (#12)' />
       </div>
 
-      <div className='space-y-8 mt-7'>
+      <div className='space-y-7 mt-7'>
         <div className='grid grid-cols-2 gap-4 menu'>
           <TabSingle icon={i1} text='Dashboard' />
           <TabSingle icon={i2} text='Memberships' notification='13' />
