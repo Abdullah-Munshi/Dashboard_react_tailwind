@@ -1,6 +1,9 @@
 import React from "react";
+import Timer from "./Timer";
 
 const TierActive = () => {
+  const time = new Date();
+  time.setSeconds(time.getSeconds() + 61200);
   return (
     <div>
       <div className='flex justify-between px-4 py-2 bg-[#1E2F65] rounded-tl-lg_next rounded-tr-lg_next mx-5'>
@@ -39,7 +42,7 @@ const TierActive = () => {
             <p className='text-[#4A4A4A] font-trunoRegular text-[15px]'>
               Earnings expire in
             </p>
-            <div>0d : 17h : 8m : 30s</div>
+            <Timer expiryTimestamp={time} />
           </div>
         </div>
       </div>
