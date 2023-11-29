@@ -33,7 +33,7 @@ const Login = () => {
                   <p className='text-[#243775] font-trunoSemibold text-xl md:text-[22px] mb-3'>
                     1. Connect BSC Wallet
                   </p>
-                  <button class='bg-gradient-one border-2 border-[#243775] drop-shadow-[drop-shadow(10px_10px_30px_rgba(0,0,0,0.30)] rounded-lg_next text-base md:text-xl font-trunoSemibold uppercase text-white px-5 py-3 min-w-[290px] h-[60px] text-shadow-one'>
+                  <button className='bg-gradient-one border-2 border-[#243775] drop-shadow-[drop-shadow(10px_10px_30px_rgba(0,0,0,0.30)] rounded-lg_next text-base md:text-xl font-trunoSemibold uppercase text-white px-5 py-3 min-w-[290px] h-[60px] text-shadow-one'>
                     Connect Wallet
                   </button>
                 </div>
@@ -41,7 +41,7 @@ const Login = () => {
                   <p className='text-[#243775] font-trunoSemibold text-xl md:text-[22px] mb-3'>
                     2. Authenticate wallet
                   </p>
-                  <button class='bg-gradient-one border-2 border-[#243775] drop-shadow-[drop-shadow(10px_10px_30px_rgba(0,0,0,0.30)] rounded-lg_next text-base md:text-xl font-trunoSemibold uppercase text-white px-5 py-3 min-w-[290px] h-[60px] text-shadow-one'>
+                  <button className='bg-gradient-one border-2 border-[#243775] drop-shadow-[drop-shadow(10px_10px_30px_rgba(0,0,0,0.30)] rounded-lg_next text-base md:text-xl font-trunoSemibold uppercase text-white px-5 py-3 min-w-[290px] h-[60px] text-shadow-one'>
                     login Now
                   </button>
                 </div>
@@ -49,7 +49,7 @@ const Login = () => {
               <div>
                 <div className='flex items-center justify-center mt-[40px] md:mt-[60px]'>
                   <div className='flex items-center justify-center mr-4'>
-                    <span class='loader'></span>
+                    <span className='loader'></span>
                   </div>
                   <p className='text-sm md:text-base leading-tight font-trunoRegular text-[#464669]'>
                     <strong className='block font-trunoSemibold text-black text-base md:text-xl'>
