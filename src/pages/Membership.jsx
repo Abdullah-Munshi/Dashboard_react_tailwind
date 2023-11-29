@@ -19,6 +19,8 @@ import st3 from "../assets/st-3.png";
 import st4 from "../assets/st-4.png";
 import TierActive from "../components/dashboard/TierActive";
 import MembershipBlk from "../components/dashboard/MembershipBlk";
+import TierExpired from "../components/dashboard/TierExpired";
+import TierInactive from "../components/dashboard/TierInactive";
 
 const Membership = () => {
   return (
@@ -110,8 +112,8 @@ const Membership = () => {
                 />
                 <div className='space-y-8'>
                   <TierActive />
-                  <TierActive />
-                  <TierActive />
+                  <TierExpired />
+                  <TierInactive />
                 </div>
               </div>
             </div>

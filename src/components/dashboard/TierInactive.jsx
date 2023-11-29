@@ -1,7 +1,7 @@
 import React from "react";
 import Timer from "./Timer";
 
-const TierActive = () => {
+const TierInactive = () => {
   const time = new Date();
   time.setSeconds(time.getSeconds() + 61200);
   return (
@@ -40,19 +40,20 @@ const TierActive = () => {
         <div>
           <div className='text-right'>
             <p className='text-[#4A4A4A] font-trunoRegular text-[15px]'>
-              Earnings expire in
+              Require{" "}
+              <strong className='inline-block font-trunoSemibold'>1000</strong>{" "}
+              membership purchase in the Powerline
             </p>
-            <Timer expiryTimestamp={time} />
           </div>
         </div>
       </div>
       <div className='text-right px-2 md:px-5'>
-        <div className='bg-[#17DF1F] rounded-bl-lg_next rounded-br-lg_next text-shadow-one text-[15px] py-2 px-3 text-white ml-auto inline-block w-[150px] text-center pt-[6px]'>
-          Earnings Active
+        <div className='bg-[#292828] rounded-bl-lg_next rounded-br-lg_next text-shadow-one text-[15px] py-2 px-3 text-white ml-auto inline-block w-[150px] text-center pt-[6px]'>
+          Tier Inactive
         </div>
       </div>
     </div>
   );
 };
 
-export default TierActive;
+export default TierInactive;
