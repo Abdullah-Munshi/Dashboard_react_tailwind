@@ -1,7 +1,7 @@
 import React from "react";
 const Stats = ({ totalCount, text, todayCount, icon }) => {
   return (
-    <div className='grid grid-cols-[auto_90px] gap-4 items-center px-5 py-4 bg-gradient-one rounded-lg_next'>
+    <div className='grid grid-cols-[auto_90px] gap-4 items-center px-5 py-4 bg-gradient-one rounded-lg_next stats'>
       <div>
         <strong className='text-white block font-trunoSemibold text-[28px] leading-tight'>
           {totalCount}

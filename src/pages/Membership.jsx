@@ -29,8 +29,8 @@ const Membership = () => {
           className='w-full h-full absolute top-0 start-0 bottom-0 end-0 bg-cover bg-center z-0'
           style={{ backgroundImage: `url(${bgDashboard})` }}
         ></div>
-        <div className='space-y-8 xl:space-y-0 xl:grid xl:grid-cols-[320px_auto] gap-7 relative z-10'>
-          <div className='space-y-8'>
+        <div className='xl:grid xl:grid-cols-[320px_auto] gap-7 relative z-10'>
+          <div className='space-y-8 hidden xl:block'>
             <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-2 gap-4 md:gap-6'>
               <TabSingle icon={i1} text='Dashboard' />
               <TabSingle icon={i2} text='Memberships' notification='13' />

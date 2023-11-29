@@ -48,6 +48,38 @@
 .detail-list li:last-child {
   border-bottom: 0;
 }
+.yScroll {
+  overflow-y: scroll;
+  scrollbar-width: thin;
+}
+.drawer .menu a span {
+  font-size: 12px;
+}
+.drawer .menu a img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 3px;
+}
+.drawer .menu a {
+  padding-bottom: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.drawer .stats {
+  padding: 12px 15px;
+  grid-template-columns: auto 45px;
+  grid-gap: 10px;
+}
+.drawer .stats div img {
+  width: 45px;
+}
+.drawer .stats p.mb-3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.drawer .stats .text-\[28px\] {
+  font-size: 24px;
+}
 /* loader css start  */
 .loader {
   width: 48px;

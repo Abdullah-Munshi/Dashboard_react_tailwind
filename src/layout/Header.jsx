@@ -12,7 +12,7 @@ import { Overlay } from "../components/Utility";
 
 const Header = () => {
   const [drawer, setDrawer] = useState(false);
-  const isSmallScreen = useMediaQuery({ maxWidth: 1023 });
+  const isSmallScreen = useMediaQuery({ maxWidth: 1279 });
   const closeDrawer = () => {
     setDrawer(false);
   };
@@ -27,7 +27,7 @@ const Header = () => {
             className='max-w-[100px] lg:max-h-[80px] lg:max-w-[250px]'
           />
         </Link>
-        <div className='hidden lg:block ml-auto mr-8 space-y-3'>
+        <div className='hidden xl:block ml-auto mr-8 space-y-3'>
           <div className='flex items-center justify-end space-x-5 xl:space-x-8'>
             <ShortHeaderInfo
               icon={currency}
@@ -49,14 +49,14 @@ const Header = () => {
         <div
           className={`${
             drawer && isSmallScreen ? "translate-x-0" : "translate-x-full"
-          } fixed h-screen w-[290px] bg-black right-0 top-0 z-50 p-6 transition duration-300`}
+          } fixed h-screen w-[290px] bg-black right-0 top-0 z-50 p-6 transition duration-300 yScroll`}
         >
           <Drawer onCloseDrawer={closeDrawer} />
         </div>
 
         <button
           onClick={() => setDrawer(true)}
-          className='mobile-bar ml-auto mr-4 lg:hidden'
+          className='mobile-bar ml-auto mr-4 xl:hidden'
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
