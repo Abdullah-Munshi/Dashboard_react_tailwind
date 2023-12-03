@@ -13,8 +13,7 @@ module.exports = {
         base_next: "1.0625rem",
       },
       fontFamily: {
-        trunoRegular: ["truenoRegular", "sans-serif"],
-        trunoSemibold: ["truenoSemibold", "sans-serif"],
+        khand: ["Khand", "sans-serif"],
       },
       backgroundImage: {
         "gradient-one": "linear-gradient(180deg, #F6BC18 0%, #ED1C24 100%)",

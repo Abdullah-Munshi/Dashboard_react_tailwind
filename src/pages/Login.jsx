@@ -1,5 +1,5 @@
 import React from "react";
-import bgLoginPge from "../assets/bg-login.jpg";
+import bgLoginPge from "../assets/bg-login.webp";
 import logo from "../assets/logo-2.png";
 const Login = () => {
   return (
