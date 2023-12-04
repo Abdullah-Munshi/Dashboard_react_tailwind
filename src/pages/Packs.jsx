@@ -3,6 +3,7 @@ import bgDashboard from "../assets/bg-dashboard.webp";
 import Header from "../layout/Header";
 import {
   BlkContainer,
+  BlkContainerTwo,
   TitlePrimary,
   TitlePrimaryTwo,
   TitleSecondary,
@@ -22,6 +23,8 @@ import CopyLink from "../components/dashboard/CopyLink";
 import DetailsTable from "../components/dashboard/DetailsTable";
 import MenuLink from "../components/dashboard/MenuLink";
 import Stats from "../components/dashboard/Stats";
+import SinglePack from "../components/dashboard/SinglePack";
+import Table from "../components/dashboard/Table";
 
 const Packs = () => {
   return (
@@ -48,7 +51,7 @@ const Packs = () => {
           </div>
           <div>
             <div className='space-y-8 md:space-y-0 md:flex justify-between items-center mt-3 mb-7 md:mb-10'>
-              <TitlePrimary>DASHBOARD</TitlePrimary>
+              <TitlePrimary>1x2 PLAN - PACKS</TitlePrimary>
               <div className='space-y-6 sm:space-y-0 sm:flex jusity-end items-center sm:space-x-16'>
                 <Stats
                   value='$12,412'
@@ -62,49 +65,29 @@ const Packs = () => {
                 />
               </div>
             </div>
+
             <div className='space-y-12'>
-              <div>
-                <BlkContainer>
-                  <PurchasePack />
-                </BlkContainer>
+              <div className='space-y-5 md:space-y-0 md:grid grid-cols-2 gap-5 xl:gap-6'>
+                <BlkContainerTwo>
+                  <SinglePack />
+                </BlkContainerTwo>
+                <BlkContainerTwo>
+                  <SinglePack />
+                </BlkContainerTwo>
+                <BlkContainerTwo>
+                  <SinglePack />
+                </BlkContainerTwo>
+                <BlkContainerTwo>
+                  <SinglePack />
+                </BlkContainerTwo>
               </div>
               <div>
                 <BlkContainer>
-                  <div className='text-center p-4 pt-6 md:p-6 space-y-8 md:pt-8'>
-                    <TitlePrimaryTwo>SHARE YOUR LINK</TitlePrimaryTwo>
-                    <div className='space-y-4 md:space-y-0 md:grid grid-cols-2 gap-6 p-6 bg-[rgba(24,22,22,0.70)] rounded-2xl_next box-shadow-[0px_11px_10px_0px_rgba(0,0,0,0.10)]'>
-                      <CopyLink
-                        title='Link to registration'
-                        link='https://app.myinfinity.io/register/username'
-                      />
-                      <CopyLink
-                        title='Link to registration'
-                        link='https://app.myinfinity.io/register/username'
-                      />
+                  <div className='p-5 md:p-6'>
+                    <div className='mb-5'>
+                      <TitleSecondary>PAYMENTS RECEIVED</TitleSecondary>
                     </div>
-                  </div>
-                </BlkContainer>
-              </div>
-              <div className='space-y-6 lg:space-y-0 lg:grid grid-cols-3 xl:grid-cols-1 2xl:grid-cols-3 gap-7'>
-                <BlkContainer>
-                  <div className='p-6 space-y-3'>
-                    <TitleSecondary>My Details</TitleSecondary>
-
-                    <DetailsTable list={[0, 0, 0, 0, 0, 0, 0, 0]} />
-                  </div>
-                </BlkContainer>
-                <BlkContainer>
-                  <div className='p-6 space-y-3'>
-                    <TitleSecondary>My Details</TitleSecondary>
-
-                    <DetailsTable list={[0, 0, 0, 0, 0, 0, 0, 0]} />
-                  </div>
-                </BlkContainer>
-                <BlkContainer>
-                  <div className='p-6 space-y-3'>
-                    <TitleSecondary>My Details</TitleSecondary>
-
-                    <DetailsTable list={[0, 0, 0, 0, 0, 0, 0, 0]} />
+                    <Table />
                   </div>
                 </BlkContainer>
               </div>

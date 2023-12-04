@@ -35,3 +35,6 @@ export const Overlay = ({ overlay }) => {
 export const BlkContainer = ({ children }) => {
   return <div className='blk-container'>{children}</div>;
 };
+export const BlkContainerTwo = ({ children }) => {
+  return <div className='blk-container singlePack'>{children}</div>;
+};
