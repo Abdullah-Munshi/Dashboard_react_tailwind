@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#FAE676",
+        primary: "#FCDF8F",
         secondary: "#F9F293",
       },
       fontSize: {
@@ -14,9 +14,10 @@ module.exports = {
       },
       fontFamily: {
         khand: ["Khand", "sans-serif"],
+        longshotRegular: ["longshotRegular", "sans-serif"],
       },
       backgroundImage: {
-        "gradient-one": "linear-gradient(180deg, #F6BC18 0%, #ED1C24 100%)",
+        one: "linear-gradient(116deg, rgba(35, 35, 32, 0.90) 16.5%, rgba(6, 6, 5, 0.90) 24.34%, rgba(49, 48, 46, 0.90) 48.24%, rgba(0, 0, 0, 0.90) 76.5%, rgba(31, 31, 29, 0.90) 83.9%)",
         "gradient-two":
           "linear-gradient(180deg, rgba(18, 52, 120, 0.9) 0%, rgba(5, 26, 71, 0.9) 100%)",
         "gradient-three": "linear-gradient(45deg, #F6BC18 0%, #ED1C24 100%)",
@@ -29,6 +30,7 @@ module.exports = {
       },
       borderRadius: {
         lg_next: "10px",
+        "2xl_next": "20px",
       },
       dropShadow: {
         btn: "10px 10px 30px rgba(0, 0, 0, 0.30)",

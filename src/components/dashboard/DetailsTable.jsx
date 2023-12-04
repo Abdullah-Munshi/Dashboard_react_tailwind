@@ -1,18 +1,16 @@
 import React from "react";
 const DetailsTable = ({ list }) => {
   return (
-    <div className='bg-gradient-six border-3 border-[#243775] rounded-lg_next'>
+    <div>
       <ul className='detail-list'>
         {list.map((row, index) => {
           return (
             <li
               key={index}
-              className='border-b border-[#123377] text-[#123377] tracking-[.45px] grid grid-cols-2 gap-4 font-trunoRegular text-[15px] px-5 md:px-6 py-2 min-h-[54px] items-center'
+              className='text-white font-khand tracking-[1px] grid grid-cols-2 gap-4 font-normal text-[17px] py-2 min-h-[54px] items-center'
             >
               <span className='block'>Text 12345</span>
-              <span className='block text-right font-trunoSemibold'>
-                Answer
-              </span>
+              <span className='block text-right font-bold'>Answer</span>
             </li>
           );
         })}

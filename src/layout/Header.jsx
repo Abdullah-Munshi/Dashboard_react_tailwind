@@ -6,7 +6,6 @@ import logo from "../assets/logo.png";
 import currency from "../assets/currency.png";
 import wallet from "../assets/wallet.png";
 import user from "../assets/user.png";
-import telegram from "../assets/telegram.png";
 import Drawer from "../components/dashboard/Drawer";
 import { Overlay } from "../components/Utility";
 
@@ -17,33 +16,25 @@ const Header = () => {
     setDrawer(false);
   };
   return (
-    <header className='bg-white px-4 py-3 md:px-6 xl:px-7'>
+    <header className='bg-transparent px-4 md:px-5'>
       <Overlay overlay={drawer && isSmallScreen} />
       <div className='flex items-center justify-between relative z-50'>
-        <Link>
+        <Link className='-mb-8'>
           <img
             src={logo}
             alt='logo'
-            className='max-w-[100px] lg:max-h-[80px] lg:max-w-[250px]'
+            className='max-w-[100px] lg:max-h-[124px] lg:max-w-[250px]'
           />
         </Link>
-        <div className='hidden xl:block ml-auto mr-8 space-y-3'>
+        <div className='hidden xl:block ml-auto space-y-3'>
           <div className='flex items-center justify-end space-x-5 xl:space-x-8'>
             <ShortHeaderInfo
               icon={currency}
-              title='Wallet Balance'
+              title='BNB BAlANCE'
               value='23 BNB'
             />
-            <ShortHeaderInfo
-              icon={wallet}
-              title='Connected Wallet'
-              value='0x123456789'
-            />
-            <ShortHeaderInfo
-              icon={user}
-              title='Hey, '
-              value='helloword (#12)'
-            />
+            <ShortHeaderInfo icon={wallet} title='WALLET' value='0x13..3Da' />
+            <ShortHeaderInfo icon={user} title='Username' value='ID 13' />
           </div>
         </div>
         <div
@@ -73,9 +64,6 @@ const Header = () => {
             <line x1='3' y1='18' x2='21' y2='18'></line>
           </svg>
         </button>
-        <Link className='w-[48px]'>
-          <img className='max-w-full' src={telegram} alt='telegram' />
-        </Link>
       </div>
     </header>
   );

@@ -4,31 +4,12 @@
 
 @layer base {
   html {
-    font-family: "Poppins", "sans-serif";
+    font-family: "Khand", "sans-serif";
   }
 }
 @font-face {
-  font-family: truenoRegular;
-  src: url(./assets/fonts/TruenoRg.woff);
-}
-@font-face {
-  font-family: truenoSemibold;
-  src: url(./assets/fonts/TruenoSBd.woff);
-}
-.text-stroke {
-  -webkit-text-stroke: 1px white; /* width and color of stroke */
-}
-.text-shadow-one {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-}
-.text-shadow-two {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.text-shadow-three {
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-}
-.text-shadow-four {
-  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.25);
+  font-family: longshotRegular;
+  src: url(./assets/fonts/Long_Shot.ttf);
 }
 .mobile-bar:hover svg {
   stroke: #f6bc18;
@@ -38,12 +19,10 @@
   color: #f6bc18;
 }
 .pack-trans-img {
-  top: 0;
-  right: 0;
+  top: -20px;
+  right: -20px;
   bottom: 0;
-  height: 100%;
-  max-width: 50%;
-  object-fit: cover;
+  width: 140px;
 }
 .detail-list li:last-child {
   border-bottom: 0;
@@ -80,24 +59,27 @@
 .drawer .stats .text-\[28px\] {
   font-size: 24px;
 }
-/* loader css start  */
-.loader {
-  width: 48px;
-  height: 48px;
-  border: 5px solid #000;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
-  animation: rotation 1s linear infinite;
+.blk-container {
+  border-radius: 20px;
+  border: 3px solid #f2e971;
+  background: linear-gradient(90deg, #181818 0%, rgba(0, 0, 0, 0) 100%),
+    url("/src/assets/bg-blk-1.jpg"), lightgray 50% / cover no-repeat;
+  box-shadow: 0px 11px 10px 0px rgba(0, 0, 0, 0.1);
 }
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.text-3 {
+  background: linear-gradient(
+    98deg,
+    #f4fd84 5.82%,
+    #cbd371 34.02%,
+    #b4bb6e 53.05%,
+    #b6bc6e 73.49%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 5px 6px 0px #42691b;
+  font-size: 64px;
 }
-/* loader css end */
+.shadow-1 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
+}

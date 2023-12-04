@@ -3,7 +3,6 @@ import ShortHeaderInfo from "./ShortHeaderInfo";
 import currency from "../../assets/currency.png";
 import wallet from "../../assets/wallet.png";
 import user from "../../assets/user.png";
-import TabSingle from "./TabSingle";
 import Stats from "./Stats";
 import i1 from "../../assets/i-1.png";
 import i2 from "../../assets/i-2.png";
@@ -12,12 +11,12 @@ import i4 from "../../assets/i-4.png";
 import i5 from "../../assets/i-5.png";
 import i6 from "../../assets/i-6.png";
 import i7 from "../../assets/i-7.png";
-import i8 from "../../assets/i-8.png";
 import st1 from "../../assets/st-1.png";
 import st2 from "../../assets/st-2.png";
 import st3 from "../../assets/st-3.png";
 import st4 from "../../assets/st-4.png";
 import { TitlePrimary } from "../Utility";
+import MenuLink from "./MenuLink";
 
 const Drawer = ({ onCloseDrawer }) => {
   return (
@@ -51,14 +50,13 @@ const Drawer = ({ onCloseDrawer }) => {
 
       <div className='space-y-7 mt-7'>
         <div className='grid grid-cols-2 gap-4 menu'>
-          <TabSingle icon={i1} text='Dashboard' />
-          <TabSingle icon={i2} text='Memberships' notification='13' />
-          <TabSingle icon={i3} text='Referrals' />
-          <TabSingle icon={i4} text='Payments' />
-          <TabSingle icon={i5} text='Alert System' />
-          <TabSingle icon={i6} text='Products' />
-          <TabSingle icon={i7} text='View Contract' />
-          <TabSingle icon={i8} text='Logout' />
+          <MenuLink icon={i1} text='Dashboard' />
+          <MenuLink icon={i2} text='Memberships' notification='13' />
+          <MenuLink icon={i3} text='Referrals' />
+          <MenuLink icon={i4} text='Payments' />
+          <MenuLink icon={i5} text='Alert System' />
+          <MenuLink icon={i6} text='Products' />
+          <MenuLink icon={i7} text='View Contract' />
         </div>
         <div>
           <TitlePrimary>My Statistics</TitlePrimary>

@@ -4,7 +4,6 @@ import Header from "../layout/Header";
 import { TitlePrimary } from "../components/Utility";
 import Stats from "../components/dashboard/Stats";
 
-import TabSingle from "../components/dashboard/TabSingle";
 import i1 from "../assets/i-1.png";
 import i2 from "../assets/i-2.png";
 import i3 from "../assets/i-3.png";
@@ -12,7 +11,6 @@ import i4 from "../assets/i-4.png";
 import i5 from "../assets/i-5.png";
 import i6 from "../assets/i-6.png";
 import i7 from "../assets/i-7.png";
-import i8 from "../assets/i-8.png";
 import st1 from "../assets/st-1.png";
 import st2 from "../assets/st-2.png";
 import st3 from "../assets/st-3.png";
@@ -33,16 +31,7 @@ const Membership = () => {
         ></div>
         <div className='xl:grid xl:grid-cols-[320px_auto] gap-7 relative z-10'>
           <div className='space-y-8 hidden xl:block'>
-            <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-2 gap-4 md:gap-6'>
-              <TabSingle icon={i1} text='Dashboard' />
-              <TabSingle icon={i2} text='Memberships' notification='13' />
-              <TabSingle icon={i3} text='Referrals' />
-              <TabSingle icon={i4} text='Payments' />
-              <TabSingle icon={i5} text='Alert System' />
-              <TabSingle icon={i6} text='Products' />
-              <TabSingle icon={i7} text='View Contract' />
-              <TabSingle icon={i8} text='Logout' />
-            </div>
+            <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 xl:grid-cols-2 gap-4 md:gap-6'></div>
             <div>
               <TitlePrimary>My Statistics</TitlePrimary>
               <div className='xl:space-y-6 grid grid-cols-1 sm:grid-cols-2 xl:block gap-4 md:gap-6 xl:gap-0'>

@@ -1,23 +1,17 @@
 import React from "react";
-const Stats = ({ totalCount, text, todayCount, icon }) => {
+const Stats = ({ value, label, icon }) => {
   return (
-    <div className='grid grid-cols-[auto_90px] gap-4 items-center px-5 py-4 bg-gradient-one rounded-lg_next stats'>
+    <div className='grid grid-cols-[54px_auto] gap-4 items-center'>
       <div>
-        <strong className='text-white block font-trunoSemibold text-[28px] leading-tight'>
-          {totalCount}
-        </strong>
-        <p className='text-white font-trunoRegular tracking-[.48px] text-base leading-snug mb-3'>
-          {text}
-        </p>
-        <p className='text-[#123377] font-trunoRegular tracking-[.48px] text-sm leading-snug'>
-          <strong className='font-trunoSemibold text-lg inline-block mr-[2px]'>
-            {todayCount}
-          </strong>{" "}
-          Today
-        </p>
+        <img src={icon} alt='icon' />
       </div>
-      <div className=''>
-        <img className='max-w-full ml-auto' src={icon} alt='icon' />
+      <div>
+        <strong className='block text-primary tracking-[3.05px] text-[34px] leading-none'>
+          {value}
+        </strong>
+        <span className='block text-white tracking-[1.4px] font-medium text-base'>
+          {label}
+        </span>
       </div>
     </div>
   );
