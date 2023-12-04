@@ -7,7 +7,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
-import Membership from "./pages/Membership";
+import Packs from "./pages/Packs";
 const router = createBrowserRouter([
   { path: "/login", element: <Login /> },
   {
@@ -15,8 +15,8 @@ const router = createBrowserRouter([
     element: <Dashboard />,
   },
   {
-    path: "/membership",
-    element: <Membership />,
+    path: "/packs",
+    element: <Packs />,
   },
 ]);
 

@@ -83,3 +83,14 @@
 .shadow-1 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
 }
+.lgn-blk {
+  background: linear-gradient(
+    116deg,
+    rgba(35, 35, 32, 0.9) 16.5%,
+    rgba(6, 6, 5, 0.9) 24.34%,
+    rgba(49, 48, 46, 0.9) 48.24%,
+    rgba(0, 0, 0, 0.9) 76.5%,
+    rgba(31, 31, 29, 0.9) 83.9%
+  );
+  box-shadow: 0px 19px 20px 0px rgba(0, 0, 0, 0.3);
+}

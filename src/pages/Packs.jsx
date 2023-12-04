@@ -23,7 +23,7 @@ import DetailsTable from "../components/dashboard/DetailsTable";
 import MenuLink from "../components/dashboard/MenuLink";
 import Stats from "../components/dashboard/Stats";
 
-const Dashboard = () => {
+const Packs = () => {
   return (
     <div className='bg-[#0B002B] relative font-khand px-4 pb-4 md:p-6 pt-4'>
       <div
@@ -116,4 +116,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default Packs;

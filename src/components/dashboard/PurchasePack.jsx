@@ -11,8 +11,8 @@ import BlkSpent from "./BlkSpent";
 
 const PurchasePack = () => {
   return (
-    <div className='p-8 relative rounded-[20px] box-shadow-[0px_10px_10px_0px_rgba(0,0,0,0.10)]'>
-      <div className='grid grid-cols-[350px_auto] gap-6 items-end'>
+    <div className='p-5 md:p-8 relative rounded-[20px] box-shadow-[0px_10px_10px_0px_rgba(0,0,0,0.10)]'>
+      <div className='grid grid-cols-1 lg:grid-cols-[350px_auto] gap-6 items-end'>
         <div className='space-y-7'>
           <div className='flex items-center'>
             <TitlePrimaryTwo>BUY PACKS</TitlePrimaryTwo>
@@ -52,7 +52,7 @@ const PurchasePack = () => {
           <h3 className='text-primary text-3xl translate-y-1 font-longshotRegular font-normal tracking-[1.5px] mb-6'>
             How $65 is Spent
           </h3>
-          <div className='p-7 mt-6 flex justify-around rounded-2xl_next bg-[rgba(24,22,22,0.70)] box-shadow-[0px_11px_10px_0px_rgba(0,0,0,0.10)]'>
+          <div className='p-5 space-y-6 md:space-y-0 md:p-7 mt-6 flex justify-around flex-wrap rounded-2xl_next bg-[rgba(24,22,22,0.70)] box-shadow-[0px_11px_10px_0px_rgba(0,0,0,0.10)]'>
             <BlkSpent
               value='$15'
               label='Fast start bonus to 
@@ -74,7 +74,7 @@ your direct sponsor'
         </div>
       </div>
       <img
-        className='absolute pack-trans-img hidden lg:block'
+        className='absolute pack-trans-img hidden md:block'
         src={coin}
         alt='img'
       />

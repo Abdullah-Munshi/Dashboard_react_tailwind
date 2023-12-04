@@ -16,14 +16,14 @@ const Header = () => {
     setDrawer(false);
   };
   return (
-    <header className='bg-transparent px-4 md:px-5'>
+    <header className='bg-transparent pr-3 pl-2 md:px-5'>
       <Overlay overlay={drawer && isSmallScreen} />
       <div className='flex items-center justify-between relative z-50'>
         <Link className='-mb-8'>
           <img
             src={logo}
             alt='logo'
-            className='max-w-[100px] lg:max-h-[124px] lg:max-w-[250px]'
+            className='max-w-[100px] md:max-h-[100px] xl:max-h-[124px] lg:max-w-[250px]'
           />
         </Link>
         <div className='hidden xl:block ml-auto space-y-3'>
@@ -47,13 +47,13 @@ const Header = () => {
 
         <button
           onClick={() => setDrawer(true)}
-          className='mobile-bar ml-auto mr-4 xl:hidden'
+          className='mobile-bar ml-auto xl:hidden'
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 24 24'
             fill='none'
-            stroke='#123377'
+            stroke='#FCDF8F'
             strokeWidth='2'
             strokeLinecap='round'
             strokeLinejoin='round'

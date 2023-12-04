@@ -34,59 +34,22 @@ const Drawer = ({ onCloseDrawer }) => {
         </svg>
       </button>
 
-      <div className='space-y-5 mb-4'>
-        <ShortHeaderInfo
-          icon={currency}
-          title='Wallet Balance'
-          value='23 BNB'
-        />
-        <ShortHeaderInfo
-          icon={wallet}
-          title='Connected Wallet'
-          value='0x123456789'
-        />
-        <ShortHeaderInfo icon={user} title='Hey, ' value='helloword (#12)' />
+      <div className='space-y-5 mb-4 -ml-3'>
+        <ShortHeaderInfo icon={currency} title='BNB BAlANCE' value='23 BNB' />
+        <ShortHeaderInfo icon={wallet} title='WALLET' value='0x13..3Da' />
+        <ShortHeaderInfo icon={user} title='Username' value='ID 13' />
       </div>
 
       <div className='space-y-7 mt-7'>
-        <div className='grid grid-cols-2 gap-4 menu'>
+        <ul>
           <MenuLink icon={i1} text='Dashboard' />
-          <MenuLink icon={i2} text='Memberships' notification='13' />
-          <MenuLink icon={i3} text='Referrals' />
-          <MenuLink icon={i4} text='Payments' />
-          <MenuLink icon={i5} text='Alert System' />
-          <MenuLink icon={i6} text='Products' />
-          <MenuLink icon={i7} text='View Contract' />
-        </div>
-        <div>
-          <TitlePrimary>My Statistics</TitlePrimary>
-          <div className='space-y-4'>
-            <Stats
-              totalCount='500'
-              text='Total Memberships'
-              todayCount='123'
-              icon={st1}
-            />
-            <Stats
-              totalCount='500'
-              text='Total Claimed'
-              todayCount='123'
-              icon={st2}
-            />
-            <Stats
-              totalCount='500'
-              text='Sponsor Match'
-              todayCount='123'
-              icon={st3}
-            />
-            <Stats
-              totalCount='500'
-              text='Fast Start Earned'
-              todayCount='123'
-              icon={st4}
-            />
-          </div>
-        </div>
+          <MenuLink icon={i2} text='1x2 Plan' />
+          <MenuLink icon={i3} text='UniLevel Plan' />
+          <MenuLink icon={i4} text='My Referrals' />
+          <MenuLink icon={i5} text='All Activity' />
+          <MenuLink icon={i6} text='Connect Telegram' />
+          <MenuLink icon={i7} text='Logout' />
+        </ul>
       </div>
     </div>
   );
