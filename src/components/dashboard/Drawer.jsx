@@ -3,7 +3,6 @@ import ShortHeaderInfo from "./ShortHeaderInfo";
 import currency from "../../assets/currency.png";
 import wallet from "../../assets/wallet.png";
 import user from "../../assets/user.png";
-import Stats from "./Stats";
 import i1 from "../../assets/i-1.png";
 import i2 from "../../assets/i-2.png";
 import i3 from "../../assets/i-3.png";
@@ -11,11 +10,6 @@ import i4 from "../../assets/i-4.png";
 import i5 from "../../assets/i-5.png";
 import i6 from "../../assets/i-6.png";
 import i7 from "../../assets/i-7.png";
-import st1 from "../../assets/st-1.png";
-import st2 from "../../assets/st-2.png";
-import st3 from "../../assets/st-3.png";
-import st4 from "../../assets/st-4.png";
-import { TitlePrimary } from "../Utility";
 import MenuLink from "./MenuLink";
 
 const Drawer = ({ onCloseDrawer }) => {

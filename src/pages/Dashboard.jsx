@@ -64,12 +64,12 @@ const Dashboard = () => {
             </div>
             <div className='space-y-12'>
               <div>
-                <BlkContainer>
+                <BlkContainer className='bg-1'>
                   <PurchasePack />
                 </BlkContainer>
               </div>
               <div>
-                <BlkContainer>
+                <BlkContainer className='bg-2'>
                   <div className='text-center p-4 pt-6 md:p-6 space-y-8 md:pt-8'>
                     <TitlePrimaryTwo>SHARE YOUR LINK</TitlePrimaryTwo>
                     <div className='space-y-4 md:space-y-0 md:grid grid-cols-2 gap-6 p-6 bg-[rgba(24,22,22,0.70)] rounded-2xl_next box-shadow-[0px_11px_10px_0px_rgba(0,0,0,0.10)]'>
@@ -86,21 +86,21 @@ const Dashboard = () => {
                 </BlkContainer>
               </div>
               <div className='space-y-6 lg:space-y-0 lg:grid grid-cols-3 xl:grid-cols-1 2xl:grid-cols-3 gap-7'>
-                <BlkContainer>
+                <BlkContainer className='bg-3'>
                   <div className='p-6 space-y-3'>
                     <TitleSecondary>My Details</TitleSecondary>
 
                     <DetailsTable list={[0, 0, 0, 0, 0, 0, 0, 0]} />
                   </div>
                 </BlkContainer>
-                <BlkContainer>
+                <BlkContainer className='bg-3'>
                   <div className='p-6 space-y-3'>
                     <TitleSecondary>My Details</TitleSecondary>
 
                     <DetailsTable list={[0, 0, 0, 0, 0, 0, 0, 0]} />
                   </div>
                 </BlkContainer>
-                <BlkContainer>
+                <BlkContainer className='bg-3'>
                   <div className='p-6 space-y-3'>
                     <TitleSecondary>My Details</TitleSecondary>
 

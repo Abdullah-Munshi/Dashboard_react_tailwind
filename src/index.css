@@ -62,14 +62,46 @@
 .blk-container {
   border-radius: 20px;
   border: 3px solid #f2e971;
-  background: linear-gradient(90deg, #181818 0%, rgba(0, 0, 0, 0) 100%),
-    url("/src/assets/bg-blk-1.jpg"), lightgray 50% / cover no-repeat;
+  background: url("/src/assets/bg-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.blk-container > div {
+  position: relative;
+  z-index: 1;
+}
+
+.blk-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #181818 0%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 20px;
   box-shadow: 0px 11px 10px 0px rgba(0, 0, 0, 0.1);
 }
-.blk-container.singlePack {
-  background: linear-gradient(90deg, #181818 0%, rgba(0, 0, 0, 0.64) 100%),
-    url("/src/assets/bg-singlepack.webp"), lightgray 50% / cover no-repeat;
-  box-shadow: 0px 11px 10px 0px rgba(0, 0, 0, 0.1);
+.blk-container.bg-2 {
+  background: url("/src/assets/bg-2.png");
+}
+.blk-container.bg-3 {
+  background: url("/src/assets/bg-3.png");
+  background-position: center;
+}
+.blk-container.bg-4 {
+  background: url("/src/assets/bg-4.png");
+  background-position: center right;
+}
+.blk-container.bg-3::after,
+.blk-container.bg-4::after,
+.blk-container.bg-5::after {
+  background: linear-gradient(90deg, #181818 0%, rgba(0, 0, 0, 0.64) 100%);
+}
+.blk-container.bg-5 {
+  background: url("/src/assets/bg-5.png");
+  background-position: center right;
 }
 .text-3 {
   background: linear-gradient(

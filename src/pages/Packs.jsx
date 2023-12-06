@@ -3,9 +3,7 @@ import bgDashboard from "../assets/bg-dashboard.webp";
 import Header from "../layout/Header";
 import {
   BlkContainer,
-  BlkContainerTwo,
   TitlePrimary,
-  TitlePrimaryTwo,
   TitleSecondary,
 } from "../components/Utility";
 import i1 from "../assets/i-1.png";
@@ -17,10 +15,6 @@ import i6 from "../assets/i-6.png";
 import i7 from "../assets/i-7.png";
 import iTotalIncome from "../assets/total-income.png";
 import iTotalExpense from "../assets/total-expense.png";
-
-import PurchasePack from "../components/dashboard/PurchasePack";
-import CopyLink from "../components/dashboard/CopyLink";
-import DetailsTable from "../components/dashboard/DetailsTable";
 import MenuLink from "../components/dashboard/MenuLink";
 import Stats from "../components/dashboard/Stats";
 import SinglePack from "../components/dashboard/SinglePack";
@@ -68,21 +62,21 @@ const Packs = () => {
 
             <div className='space-y-12'>
               <div className='space-y-5 md:space-y-0 md:grid grid-cols-2 gap-5 xl:gap-6'>
-                <BlkContainerTwo>
+                <BlkContainer className='bg-4'>
                   <SinglePack />
-                </BlkContainerTwo>
-                <BlkContainerTwo>
+                </BlkContainer>
+                <BlkContainer className='bg-4'>
                   <SinglePack />
-                </BlkContainerTwo>
-                <BlkContainerTwo>
+                </BlkContainer>
+                <BlkContainer className='bg-4'>
                   <SinglePack />
-                </BlkContainerTwo>
-                <BlkContainerTwo>
+                </BlkContainer>
+                <BlkContainer className='bg-4'>
                   <SinglePack />
-                </BlkContainerTwo>
+                </BlkContainer>
               </div>
               <div>
-                <BlkContainer>
+                <BlkContainer className='bg-5'>
                   <div className='p-5 md:p-6'>
                     <div className='mb-5'>
                       <TitleSecondary>PAYMENTS RECEIVED</TitleSecondary>

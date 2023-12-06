@@ -6,7 +6,7 @@ import btnPurchase from "../../assets/btn-purchase.png";
 import b1 from "../../assets/b-1.png";
 import b2 from "../../assets/b-2.png";
 import b3 from "../../assets/b-3.png";
-import { TitlePrimaryTwo, TitleSecondary } from "../Utility";
+import { TitlePrimaryTwo } from "../Utility";
 import BlkSpent from "./BlkSpent";
 
 const PurchasePack = () => {
