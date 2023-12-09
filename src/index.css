@@ -148,6 +148,10 @@
   color: #fff;
   height: 45px;
 }
+.triangle-outer {
+  width: 105px;
+  height: 76px;
+}
 
 @media screen and (max-width: 767px) {
   .table-custom-scroller {

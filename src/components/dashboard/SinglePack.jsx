@@ -1,10 +1,10 @@
 import React from "react";
-import tree from "../../assets/tree.png";
 import totalIncome from "../../assets/totalIncome.png";
 import loader from "../../assets/loader.png";
 import btnMore from "../../assets/btn-more.png";
 import { TitlePrimaryTwo } from "../Utility";
 import Stats from "./Stats";
+import MemberTree from "./MemberTree";
 const SinglePack = () => {
   return (
     <div className='space-y-6 sm:space-y-0 sm:grid grid-cols-2 sm:gap-6 items-center p-5 md:p-6'>
@@ -28,7 +28,7 @@ const SinglePack = () => {
         </button>
       </div>
       <div className='text-center'>
-        <img className='max-w-full mx-auto' src={tree} alt='tree' />
+        <MemberTree />
       </div>
     </div>
   );
