@@ -1,6 +1,6 @@
 export const TitlePrimary = ({ children }) => {
   return (
-    <h2 className="text-white shadow-1 text-2xl xl:text-4xl translate-y-1 font-longshotRegular font-normal tracking-[3.1px]">
+    <h2 className="text-white shadow-1 text-2xl xl:text-4xl font-orbitron font-bold tracking-[3.1px] uppercase">
       {children}
     </h2>
   );
