@@ -1,6 +1,6 @@
 export const TitlePrimary = ({ children }) => {
   return (
-    <h2 className='text-white shadow-1 text-2xl xl:text-4xl translate-y-1 font-longshotRegular font-normal tracking-[3.1px]'>
+    <h2 className="text-white shadow-1 text-2xl xl:text-4xl translate-y-1 font-longshotRegular font-normal tracking-[3.1px]">
       {children}
     </h2>
   );
@@ -8,7 +8,7 @@ export const TitlePrimary = ({ children }) => {
 
 export const TitlePrimaryTwo = ({ children }) => {
   return (
-    <h2 className='text-primary shadow-1 text-2xl xl:text-4xl translate-y-1 font-longshotRegular font-normal tracking-[1.8px]'>
+    <h2 className="text-primary shadow-1 text-2xl xl:text-4xl translate-y-1 font-longshotRegular font-normal tracking-[1.8px]">
       {children}
     </h2>
   );
@@ -16,7 +16,7 @@ export const TitlePrimaryTwo = ({ children }) => {
 
 export const TitleSecondary = ({ children }) => {
   return (
-    <h2 className='text-primary uppercase text-2xl translate-y-1 font-longshotRegular font-normal tracking-[1.5px]'>
+    <h2 className="text-primary uppercase text-2xl translate-y-1 font-longshotRegular font-normal tracking-[1.5px]">
       {children}
     </h2>
   );

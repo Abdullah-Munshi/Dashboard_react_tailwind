@@ -11,6 +11,30 @@
   font-family: longshotRegular;
   src: url(./assets/fonts/Long_Shot.ttf);
 }
+
+.txt_shadow_one {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+.middle_point {
+  top: 292px;
+  width: 160px;
+  height: 160px;
+}
+.disk_top {
+  top: 120px;
+  width: 380px;
+}
+.disk_top .logo {
+  width: 265px;
+}
+.txt_1 {
+  text-shadow: 4px 4px 12px #0e0e0d;
+  font-size: 36px;
+  color: #fff;
+  text-shadow: 1px 1px #0b0738, -1px 1px #0b0738, 1px -1px #0b0738,
+    -1px -1px #0b0738;
+  line-height: 1.4;
+}
 .mobile-bar:hover svg {
   stroke: #f6bc18;
 }
