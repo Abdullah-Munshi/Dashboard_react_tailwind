@@ -20,9 +20,15 @@
   width: 160px;
   height: 160px;
 }
+.disk_top,
+.disk_bottom {
+  width: 380px;
+}
 .disk_top {
   top: 120px;
-  width: 380px;
+}
+.disk_bottom {
+  top: 515px;
 }
 .disk_top .logo {
   width: 265px;
@@ -34,6 +40,34 @@
   text-shadow: 1px 1px #0b0738, -1px 1px #0b0738, 1px -1px #0b0738,
     -1px -1px #0b0738;
   line-height: 1.4;
+}
+.disk_wrapper {
+  flex: 0 0 780px;
+}
+/* Media Query */
+@media screen and (max-width: 639px) {
+  .disk_wrapper {
+    flex: 0 0 430px;
+    width: 430px;
+  }
+  .txt_1 {
+    font-size: 23px;
+    line-height: 1.2;
+  }
+  .disk_top .logo {
+    width: 160px;
+  }
+  .disk_top {
+    top: 66px;
+  }
+  .middle_point {
+    top: 158px;
+    width: 95px;
+    height: 95px;
+  }
+  .disk_bottom {
+    top: 272px;
+  }
 }
 .mobile-bar:hover svg {
   stroke: #f6bc18;
