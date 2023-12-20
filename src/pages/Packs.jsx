@@ -4,6 +4,7 @@ import Header from "../layout/Header";
 import { TitlePrimary } from "../components/Utility";
 import Table from "../components/dashboard/Table";
 import Contract from "../components/dashboard/Contract";
+import ContractTwo from "../components/dashboard/ContractTwo";
 
 const Dashboard = () => {
   return (
@@ -25,7 +26,7 @@ const Dashboard = () => {
               <TitlePrimary>MY CONTRACTS</TitlePrimary>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-7">
-              <Contract />
+              <ContractTwo />
               <Contract />
               <Contract />
               <Contract />

@@ -6,21 +6,16 @@ const Timer = ({ expiryTimestamp }) => {
     expiryTimestamp,
     isRunning: true,
   });
+
   return (
-    <div className='flex items-center justify-end font-trunoSemibold text-lg'>
-      {days}d{" "}
-      <span className='mx-[5px] text-xl inline-block -translate-y-[2px]'>
-        :
-      </span>{" "}
-      {hours}h{" "}
-      <span className='mx-[5px] text-xl inline-block -translate-y-[2px]'>
-        :
-      </span>{" "}
-      {minutes}m{" "}
-      <span className='mx-[5px] text-xl inline-block -translate-y-[2px]'>
-        :
-      </span>{" "}
-      {seconds}s
+    <div className="flex items-center justify-end font-trunoSemibold text-lg">
+      <p className="text-white txt_shadow_one font-oxanium font-bold text-lg leading-tight">
+        Expires in
+        <strong className="block text-[#40C5E6] txt_shadow_one text-4xl leading-[.8] mt-1">
+          {days}
+        </strong>{" "}
+        days
+      </p>
     </div>
   );
 };

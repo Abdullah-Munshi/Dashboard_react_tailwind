@@ -24,6 +24,8 @@ module.exports = {
         three:
           "linear-gradient(180deg, #0D3279 0%, rgba(17, 17, 16, 0.79) 100%)",
         four: "linear-gradient(180deg, #CE0707 0%, rgba(122, 9, 9, 0.55) 56.87%)",
+        five: "linear-gradient(180deg, #0D3279 0%, rgba(18, 17, 19, 0.01) 56.87%)",
+        six: "linear-gradient(180deg, #0D3279 0%, rgba(248, 137, 43, 0.59) 100%)",
       },
       borderRadius: {
         lg_next: "10px",
