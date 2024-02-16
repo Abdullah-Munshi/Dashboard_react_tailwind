@@ -5,18 +5,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
-import Packs from "./pages/Packs";
+import Auth from "./pages/Auth";
 const router = createBrowserRouter([
-  { path: "/login", element: <Login /> },
+  { path: "/auth", element: <Auth /> },
   {
     path: "/",
     element: <Dashboard />,
-  },
-  {
-    path: "/packs",
-    element: <Packs />,
   },
 ]);
 

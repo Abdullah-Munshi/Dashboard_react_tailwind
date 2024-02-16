@@ -1,16 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.text-shadow-1 {
+  text-shadow: 0 4px 5px #00000054;
+}
 
-@layer base {
-  html {
-    font-family: "Khand", "sans-serif";
-  }
-}
-@font-face {
-  font-family: longshotRegular;
-  src: url(./assets/fonts/Long_Shot.ttf);
-}
+/* previous project css  */
 .mobile-bar:hover svg {
   stroke: #f6bc18;
 }
