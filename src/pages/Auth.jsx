@@ -6,7 +6,7 @@ import authBg from "../assets/auth-bg.webp";
 import logo from "../assets/logo.png";
 
 const Auth = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div className="min-h-screen relative">
       <div
@@ -24,7 +24,7 @@ const Auth = () => {
               />
             </Link>
           </div>
-          <div className="border-2 border-[#FFDE59] rounded-3xl bg-gradient-to-b from-[#181818]/80 to-[#000000]/80 min-h-[400px] shadow-lg shadow-black/40 px-4 md:px-10 pb-5">
+          <div className="border-[3px] border-[#FBBA04] rounded-3xl bg-gradient-to-b from-[#181818]/80 to-[#000000]/80 min-h-[370px] shadow-lg shadow-black/40 px-4 md:px-10 pb-5">
             <div>{isLoggedIn ? <Login /> : <Register />}</div>
           </div>
           <div className="text-center mt-10 md:mt-16">
