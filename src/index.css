@@ -4,7 +4,14 @@
 .text-shadow-1 {
   text-shadow: 0 4px 5px #00000054;
 }
-
+.view-contract {
+  color: #000;
+  font-size: 16px !important;
+  height: auto !important;
+  padding: 12px 24px;
+  border-radius: 10px;
+  padding-bottom: 13px;
+}
 /* previous project css  */
 .mobile-bar:hover svg {
   stroke: #f6bc18;

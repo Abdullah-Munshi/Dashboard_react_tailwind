@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const Button = ({ variant, type, classes, onClick, children }) => {
   let dynamicClass = classes;
   switch (variant) {
@@ -8,6 +10,10 @@ export const Button = ({ variant, type, classes, onClick, children }) => {
     case "pink":
       dynamicClass +=
         " bg-gradient-to-b from-[#B404D0] to-[#710084] after:bg-[#36003E]";
+      break;
+    case "green":
+      dynamicClass +=
+        " bg-gradient-to-b from-[#C1FF72] to-[#60AB00] after:bg-[#426E0A]";
       break;
     default:
       dynamicClass += " bg-gradient-to-b from-[#1CE9E4] to-[#07918E]";
