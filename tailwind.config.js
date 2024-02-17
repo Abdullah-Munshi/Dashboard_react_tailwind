@@ -11,6 +11,9 @@ module.exports = {
         sans: ["Montserrat Alternates", "sans-serif"],
         russoOne: ["Russo One", "sans-serif"],
       },
+      backgroundImage: {
+        secondaryGradient_to_b: "linear-gradient(to bottom, #CA00EB, #3B0044)",
+      },
     },
   },
   plugins: [],
