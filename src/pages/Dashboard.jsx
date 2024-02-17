@@ -17,6 +17,8 @@ import StatsGeneral from "../components/dashboard/StatsGeneral";
 import Table from "../components/dashboard/Table";
 import Level from "../components/dashboard/Level";
 import TableTwo from "../components/dashboard/TableTwo";
+import LevelActive from "../components/dashboard/LevelActive";
+import LevelLocked from "../components/dashboard/LevelLocked";
 
 const Dashboard = () => {
   return (
@@ -26,8 +28,8 @@ const Dashboard = () => {
         className="bg-[#0B002B] relative px-4 pb-4 md:p-6 pt-4 shadow-md shadow-black/50"
         style={{ backgroundImage: `url(${dashboardBg})` }}
       >
-        <div className="grid grid-cols-[250px_auto]">
-          <div className="-mr-7 relative z-10 mt-6 space-y-6">
+        <div className="xl:grid grid-cols-[250px_auto]">
+          <div className="-mr-7 relative z-10 mt-6 space-y-6 hidden xl:block">
             <div className="space-y-8 hidden xl:block bg-secondaryGradient_to_b rounded-xl p-5 shadow-lg shadow-black/50">
               <ul className="space-y-2">
                 <MenuLink icon={i1} text="Dashboard" isActive={true} />
@@ -64,16 +66,16 @@ const Dashboard = () => {
           </div>
 
           {/* right part  */}
-          <div className="border-[3px] border-[#FBBA04] rounded-3xl bg-gradient-to-b from-[#181818]/80 to-[#000000]/80 shadow-lg shadow-black/40 pl-[50px] pr-6 py-6 space-y-9">
+          <div className="border-[3px] border-[#FBBA04] rounded-3xl bg-gradient-to-b from-[#181818]/80 to-[#000000]/80 shadow-lg shadow-black/40 p-4 md:pl-6 xl:pl-[50px] md:pr-6 md:py-6 space-y-9">
             <div>
               <StatsGeneral />
             </div>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid lg:grid-cols-2 gap-6">
               <div className="p-6 space-y-2 bg-secondaryGradient_to_b rounded-xl">
                 <TableTitle title="My Details" buttonText="VIEW PROFILE" />
                 <Table />
               </div>
-              <div className="p-6 space-y-2 bg-gradient-to-b from-[#282828] to-[#141414] rounded-xl">
+              <div className="p-6 space-y-2 bg-gradient-to-b from-[#282828] to-[#141414] rounded-xl shadow-md shadow-[#36221E]">
                 <TableTitle
                   title="Community wise Income"
                   buttonText="VIEW ALL"
@@ -81,12 +83,14 @@ const Dashboard = () => {
                 <TableTwo />
               </div>
             </div>
-            <div>
-              <h2>All Levels</h2>
-              <div className="lg:grid grid-cols-3 gap-7">
+            <div className="">
+              <h2 className="text-white font-russoOne text-[27px] mb-4">
+                All Levels
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
                 <Level />
-                <Level />
-                <Level />
+                <LevelActive />
+                <LevelLocked />
               </div>
             </div>
           </div>

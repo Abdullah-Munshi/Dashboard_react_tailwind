@@ -12,6 +12,7 @@ module.exports = {
         russoOne: ["Russo One", "sans-serif"],
       },
       backgroundImage: {
+        primaryGradient_to_b: "linear-gradient(to bottom, #C1FF72, #60AB00)",
         secondaryGradient_to_b: "linear-gradient(to bottom, #CA00EB, #3B0044)",
       },
     },

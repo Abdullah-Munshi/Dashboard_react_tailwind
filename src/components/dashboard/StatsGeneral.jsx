@@ -21,7 +21,7 @@ const SingleStat = ({ label, totalAmount, todayAmount, icon, isActive }) => {
 
 const StatsGeneral = () => {
   return (
-    <div className="grid grid-cols-4 gap-6">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
       <SingleStat
         label="Total Income"
         totalAmount="5000"

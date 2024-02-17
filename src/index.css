@@ -33,8 +33,9 @@
 .btn-size-2 {
   font-size: 12px !important;
   color: #000;
-  padding: 4px 20px !important;
+  padding: 5px 20px !important;
   border-radius: 10px;
+  height: auto !important;
 }
 .table-custom.two .tbl-row,
 .table-custom.two .tbl-head-row {
@@ -42,7 +43,32 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
-/* previous project css  */
+
+.level-rating span {
+  display: inline-block;
+  background-color: #e4e4e4;
+  width: 28px;
+  height: 28px;
+  background-color: #e4e4e4;
+  background: ;
+  border-radius: 50%;
+}
+.level-rating span.active {
+  background-image: linear-gradient(to bottom, #c1ff72, #60ab00);
+  box-shadow: 0px 3px 5px #0000003d;
+}
+.level-rating.plc-2 span {
+  width: 22px;
+  hyphenate-character: ;
+  height: 22px;
+}
+.purchase-btn {
+  color: #000;
+  font-size: 18px !important;
+  padding: 14px 24px;
+  border-radius: 14px;
+  height: auto !important;
+}
 .mobile-bar:hover svg {
   stroke: #f6bc18;
 }
@@ -88,5 +114,8 @@
 @media screen and (max-width: 767px) {
   .table-custom-scroller {
     overflow-x: scroll;
+  }
+  .btn-size-2 {
+    line-height: 2;
   }
 }
