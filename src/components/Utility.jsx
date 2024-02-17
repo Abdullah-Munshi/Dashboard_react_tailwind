@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export const Button = ({ variant, type, classes, onClick, children }) => {
   let dynamicClass = classes;
   switch (variant) {
@@ -15,6 +13,10 @@ export const Button = ({ variant, type, classes, onClick, children }) => {
       dynamicClass +=
         " bg-gradient-to-b from-[#C1FF72] to-[#60AB00] after:bg-[#426E0A]";
       break;
+    case "gray":
+      dynamicClass +=
+        " bg-gradient-to-b from-[#ffffff] to-[#BFBFBF] after:bg-[#888888]";
+      break;
     default:
       dynamicClass += " bg-gradient-to-b from-[#1CE9E4] to-[#07918E]";
   }
@@ -29,30 +31,16 @@ export const Button = ({ variant, type, classes, onClick, children }) => {
   );
 };
 
-export const TitlePrimary = ({ children }) => {
+export const TableTitle = ({ title, buttonText }) => {
   return (
-    <h2 className="text-white shadow-1 text-2xl xl:text-4xl translate-y-1 font-longshotRegular font-normal tracking-[3.1px]">
-      {children}
-    </h2>
+    <div className="flex items-center justify-between">
+      <h3 className="text-primary font-bold text-base">{title}</h3>
+      <Button variant="gray" classes="btn-size-2">
+        {buttonText}
+      </Button>
+    </div>
   );
 };
-
-export const TitlePrimaryTwo = ({ children }) => {
-  return (
-    <h2 className="text-primary shadow-1 text-2xl xl:text-4xl translate-y-1 font-longshotRegular font-normal tracking-[1.8px]">
-      {children}
-    </h2>
-  );
-};
-
-export const TitleSecondary = ({ children }) => {
-  return (
-    <h2 className="text-primary uppercase text-2xl translate-y-1 font-longshotRegular font-normal tracking-[1.5px]">
-      {children}
-    </h2>
-  );
-};
-
 export const Overlay = ({ overlay }) => {
   return (
     <div
@@ -61,8 +49,4 @@ export const Overlay = ({ overlay }) => {
       } fixed w-screen h-screen top-0 left-0 right-0 bg-black/60 transition duration-300 z-40 `}
     ></div>
   );
-};
-
-export const BlkContainer = ({ children, className }) => {
-  return <div className={`blk-container ${className}`}>{children}</div>;
 };

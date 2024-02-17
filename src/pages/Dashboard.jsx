@@ -1,7 +1,7 @@
 import React from "react";
 import dashboardBg from "../assets/dashboard-bg.webp";
 import Header from "../layout/Header";
-import { Button, TitleSecondary } from "../components/Utility";
+import { Button, TableTitle } from "../components/Utility";
 import i1 from "../assets/i-1.png";
 import i2 from "../assets/i-2.png";
 import i3 from "../assets/i-3.png";
@@ -11,10 +11,12 @@ import i6 from "../assets/i-6.png";
 import i7 from "../assets/i-7.png";
 import iconUser from "../assets/total-user.png";
 import iconEarn from "../assets/total-earn.png";
-import DetailsTable from "../components/dashboard/DetailsTable";
 import MenuLink from "../components/dashboard/MenuLink";
 import Stats from "../components/dashboard/Stats";
 import StatsGeneral from "../components/dashboard/StatsGeneral";
+import Table from "../components/dashboard/Table";
+import Level from "../components/dashboard/Level";
+import TableTwo from "../components/dashboard/TableTwo";
 
 const Dashboard = () => {
   return (
@@ -47,7 +49,7 @@ const Dashboard = () => {
                 </li>
                 <li className="border-b border-[#616161] last:border-none py-4">
                   <Stats
-                    value="1,312,312"
+                    value="$ 1,312,312"
                     label="Earned by Users"
                     icon={iconEarn}
                   />
@@ -62,21 +64,31 @@ const Dashboard = () => {
           </div>
 
           {/* right part  */}
-          <div className="border-[3px] border-[#FBBA04] rounded-3xl bg-gradient-to-b from-[#181818]/80 to-[#000000]/80 shadow-lg shadow-black/40 pl-[50px] pr-6 py-6">
+          <div className="border-[3px] border-[#FBBA04] rounded-3xl bg-gradient-to-b from-[#181818]/80 to-[#000000]/80 shadow-lg shadow-black/40 pl-[50px] pr-6 py-6 space-y-9">
             <div>
               <StatsGeneral />
             </div>
             <div className="grid grid-cols-2 gap-6">
-              <div className="p-6 space-y-3">
-                <TitleSecondary>My Details</TitleSecondary>
-                <DetailsTable list={[0, 0, 0, 0, 0, 0, 0, 0]} />
+              <div className="p-6 space-y-2 bg-secondaryGradient_to_b rounded-xl">
+                <TableTitle title="My Details" buttonText="VIEW PROFILE" />
+                <Table />
               </div>
-              <div>
-                <TitleSecondary>My Details</TitleSecondary>
-                <DetailsTable list={[0, 0, 0, 0, 0, 0, 0, 0]} />
+              <div className="p-6 space-y-2 bg-gradient-to-b from-[#282828] to-[#141414] rounded-xl">
+                <TableTitle
+                  title="Community wise Income"
+                  buttonText="VIEW ALL"
+                />
+                <TableTwo />
               </div>
             </div>
-            <div></div>
+            <div>
+              <h2>All Levels</h2>
+              <div className="lg:grid grid-cols-3 gap-7">
+                <Level />
+                <Level />
+                <Level />
+              </div>
+            </div>
           </div>
         </div>
       </main>

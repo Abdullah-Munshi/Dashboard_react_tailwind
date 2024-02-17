@@ -5,15 +5,15 @@ import iconSg3 from "../../assets/sg-3.png";
 import iconSg4 from "../../assets/sg-4.png";
 const SingleStat = ({ label, totalAmount, todayAmount, icon, isActive }) => {
   return (
-    <div className="bg-gradient-to-b from-[#C1FF72] to-[#60AB00] rounded-lg drop-shadow-md">
+    <div className="bg-gradient-to-b from-[#C1FF72] to-[#60AB00] rounded-xl shadow-md shadow-black/50 grid grid-cols-[auto_65px] gap-7 items-center p-7">
       <div>
-        <p>{label}</p>
-        <strong>${totalAmount}</strong>
-        <span></span>
-        <p>Today ${todayAmount}</p>
+        <p className="font-medium text-base mb-1">{label}</p>
+        <strong className="block text-[26px] font-bold">${totalAmount}</strong>
+        <span className="block bg-[#8B8B8B] w-full h-[1px] my-2"></span>
+        <p className="font-medium text-[15px]">Today ${todayAmount}</p>
       </div>
       <div>
-        <img src={icon} alt="icon" />
+        <img src={icon} alt="icon" className="max-w-full" />
       </div>
     </div>
   );
