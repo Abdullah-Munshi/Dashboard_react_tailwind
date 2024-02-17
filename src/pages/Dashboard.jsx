@@ -19,6 +19,8 @@ import Level from "../components/dashboard/Level";
 import TableTwo from "../components/dashboard/TableTwo";
 import LevelActive from "../components/dashboard/LevelActive";
 import LevelLocked from "../components/dashboard/LevelLocked";
+import { Link } from "react-router-dom";
+import iconPeople from "../assets/people.png";
 
 const Dashboard = () => {
   return (
@@ -66,7 +68,32 @@ const Dashboard = () => {
           </div>
 
           {/* right part  */}
-          <div className="border-[3px] border-[#FBBA04] rounded-3xl bg-gradient-to-b from-[#181818]/80 to-[#000000]/80 shadow-lg shadow-black/40 p-4 md:pl-6 xl:pl-[50px] md:pr-6 md:py-6 space-y-9">
+          <div className="grid lg:grid-cols-2 gap-4 md:gap-6 items-center rounded-2xl p-4 md:p-6 mb-6 xl:hidden bg-gradient-to-b from-[#1C1C1C] to-[#2A2A2A]">
+            <ul className="mb-2 grid sm:grid-cols-2 items-center gap-4 md:gap-6">
+              <li className="p-4 border-2 border-primary rounded-xl">
+                <Stats value="1234" label="Total Users" icon={iconUser} />
+              </li>
+              <li className="p-4 border-2 border-primary rounded-xl">
+                <Stats
+                  value="$ 1,312,312"
+                  label="Earned by Users"
+                  icon={iconEarn}
+                />
+              </li>
+            </ul>
+            <div className="grid grid-cols-[auto_40px] items-center gap-4">
+              <div className="space-y-1 text-right">
+                <h4 className="text-white text-sm font-medium leading-tight">
+                  Personal Inviter Link
+                </h4>
+                <Link className="text-primary text-base md:text-lg font-bold inline-block leading-tight">
+                  https://heal.estate.io/grantor/username
+                </Link>
+              </div>
+              <img className="max-w-full" src={iconPeople} alt="ppl" />
+            </div>
+          </div>
+          <div className="border-[3px] border-primary rounded-2xl md:rounded-3xl bg-gradient-to-b from-[#181818]/80 to-[#000000]/80 shadow-lg shadow-black/40 p-4 md:pl-6 xl:pl-[50px] md:pr-6 md:py-6 space-y-9">
             <div>
               <StatsGeneral />
             </div>

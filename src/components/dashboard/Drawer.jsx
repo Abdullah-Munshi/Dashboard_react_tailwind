@@ -29,7 +29,7 @@ const Drawer = ({ onCloseDrawer }) => {
         </svg>
       </button>
 
-      <div className="space-y-5 mb-4 -ml-3">
+      <div className="space-y-5 mb-4">
         <ShortHeaderInfo icon={currency} title="BNB BAlANCE" value="23 BNB" />
         <ShortHeaderInfo icon={wallet} title="WALLET" value="0x13..3Da" />
         <ShortHeaderInfo icon={user} title="Username" value="ID 13" />

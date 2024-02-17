@@ -5,7 +5,11 @@ import iconSg3 from "../../assets/sg-3.png";
 import iconSg4 from "../../assets/sg-4.png";
 const SingleStat = ({ label, totalAmount, todayAmount, icon, isActive }) => {
   return (
-    <div className="bg-gradient-to-b from-[#C1FF72] to-[#60AB00] rounded-xl shadow-md shadow-black/50 grid grid-cols-[auto_65px] gap-7 items-center p-7">
+    <div
+      className={`${
+        isActive ? "opacity-100" : "opacity-50"
+      } bg-gradient-to-b from-[#C1FF72] to-[#60AB00] rounded-xl shadow-md shadow-black/50 grid grid-cols-[auto_65px] gap-7 items-center p-7`}
+    >
       <div>
         <p className="font-medium text-base mb-1">{label}</p>
         <strong className="block text-[26px] font-bold">${totalAmount}</strong>
@@ -27,28 +31,30 @@ const StatsGeneral = () => {
         totalAmount="5000"
         todayAmount="10"
         icon={iconSg1}
-        isActive={false}
+        isActive={true}
       />
       <SingleStat
-        label="Total Income"
-        totalAmount="5000"
+        label="Total Referrals"
+        totalAmount="123"
         todayAmount="10"
         icon={iconSg2}
-        disabled={false}
+        isActive={true}
       />
       <SingleStat
-        label="Total Income"
+        label="Income from
+        Community"
         totalAmount="5000"
         todayAmount="10"
         icon={iconSg3}
-        disabled={false}
+        isActive={true}
       />
       <SingleStat
-        label="Total Income"
+        label="Income 
+        from Matrix"
         totalAmount="5000"
         todayAmount="10"
         icon={iconSg4}
-        disabled={false}
+        isActive={false}
       />
     </div>
   );
