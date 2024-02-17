@@ -10,16 +10,16 @@ const Login = () => {
     console.log("Handle Login Function!");
   };
   return (
-    <div className="space-y-14">
+    <div className="space-y-9 md:space-y-14">
       <div className="">
         <AuthTitle
           heading="Welcome to Heal.Estate"
           subHeading="Let’s Get Started"
         />
       </div>
-      <div className="grid grid-cols-2 gap-14 max-w-[750px] mx-auto">
-        <div className="max-w-[300px]">
-          <p className="text-white text-center text-base font-bold mb-5">
+      <div className="md:flex justify-between max-w-[650px] mx-auto space-y-8 md:space-y-0">
+        <div className="max-w-[300px] mx-auto md:mx-0">
+          <p className="text-white text-center text-sm md:text-base font-bold mb-4 md:mb-5">
             New to Heal.Estate?
           </p>
           <Button
@@ -31,8 +31,8 @@ const Login = () => {
             CREATE AN ACCOUNT
           </Button>
         </div>
-        <div className="max-w-[300px]">
-          <p className="text-white text-center text-base font-bold mb-5">
+        <div className="max-w-[300px] mx-auto md:mx-0">
+          <p className="text-white text-center text-sm md:text-base font-bold mb-4 md:mb-5">
             Already have an account?
           </p>
           <Button
@@ -45,8 +45,8 @@ const Login = () => {
           </Button>
         </div>
       </div>
-      <div className="text-center max-w-[750px] mx-auto">
-        <p className="text-white text-sm">
+      <div className="text-center max-w-[650px] mx-auto">
+        <p className="text-white text-sm mb-4">
           You were referred by{" "}
           <strong className="inline-block">Username</strong>
         </p>

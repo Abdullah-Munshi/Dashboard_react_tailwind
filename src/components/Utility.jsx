@@ -16,7 +16,7 @@ export const Button = ({ variant, type, classes, onClick, children }) => {
     <button
       onClick={onClick}
       type={type ? type : "button"}
-      className={`${dynamicClass} text-white rounded-2xl font-russoOne uppercase text-xl leading-tight px-8 pb-6 pt-[22px] text-shadow-1 relative after:w-full after:h-[4px] after:absolute after:bottom-0 after:left-0 overflow-hidden`}
+      className={`${dynamicClass} text-white rounded-2xl font-russoOne uppercase text-lg md:text-xl leading-tight px-8 pb-6 pt-[22px] text-shadow-1 relative after:w-full after:h-[4px] after:absolute after:bottom-0 after:left-0 overflow-hidden`}
     >
       {children}
     </button>
