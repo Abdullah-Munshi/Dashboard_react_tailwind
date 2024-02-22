@@ -41,3 +41,14 @@ export const ButtonPrimaryType2 = ({ children, onClick }) => {
     </button>
   );
 };
+
+export const ButtonPrimaryGradient = ({ children, onClick }) => {
+  return (
+    <button
+      onClick={onclick}
+      className="btn-primary bg-gradient-to-b from-[#52B86E] to-[#3E9055] text-white text-base font-bold px-4 py-4 rounded-xl"
+    >
+      {children}
+    </button>
+  );
+};

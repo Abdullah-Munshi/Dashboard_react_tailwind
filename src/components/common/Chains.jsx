@@ -51,3 +51,23 @@ export const TokenDark = ({ icon, name, isActive }) => {
     </button>
   );
 };
+
+export const TokenLight = ({ icon, name, isActive }) => {
+  return (
+    <button
+      className={`border-[3px] ${
+        isActive ? "border-primary" : "border-transparent"
+      } bg-white rounded-[15px] shadow-lg shadow-black/10 w-[165px] h-[60px] px-3  grid grid-cols-[40px_auto] items-center gap-3`}
+    >
+      <span className="inline-flex items-center justify-center">
+        <img src={icon} alt="icon" className="max-w-full mx-auto block" />
+      </span>
+      <strong className="block text-primary text-xl font-bold leading-tight text-left uppercase">
+        <span className="block text-white text-[13px] font-normal capitalize">
+          Pay Using
+        </span>
+        {name}
+      </strong>
+    </button>
+  );
+};

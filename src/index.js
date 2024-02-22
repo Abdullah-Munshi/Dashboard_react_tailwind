@@ -10,8 +10,10 @@ import Dashboard from "./layout/Dashboard";
 import Create from "./pages/Create";
 import Manage from "./pages/Manage";
 import Transactions from "./pages/Transactions";
+import Pay from "./pages/Pay";
 const router = createBrowserRouter([
   { path: "/auth", element: <Auth /> },
+  { path: "/pay", element: <Pay /> },
   {
     path: "/",
     element: <Dashboard />,
