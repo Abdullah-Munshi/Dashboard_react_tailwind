@@ -2,7 +2,10 @@ import React from "react";
 import { PrimaryHeading } from "../components/common/Headings";
 import { ContentBox } from "../components/common/Utils";
 import { LabelBoxInput } from "../components/common/Inputs";
-import { ButtonPrimaryType2 } from "../components/common/Buttons";
+import {
+  ButtonPrimary,
+  ButtonPrimaryType2,
+} from "../components/common/Buttons";
 import arwRight from "../assets/arw-right.png";
 import { ChainDark, TokenDark } from "../components/common/Chains";
 import i1 from "../assets/i-1.png";
@@ -16,6 +19,12 @@ const Manage = () => {
     <div>
       <div className="mb-4 lg:mb-6">
         <PrimaryHeading>Payments Dashboard</PrimaryHeading>sdfsdfdsf
+        <div className="tabs grid grid-cols-2 gap-3 sm:gap-0 sm:flex flex-wrap mb-4 sm:mb-3">
+          <button className="active">Dashboard</button>
+          <button>Dashboard</button>
+          <button>Dashboard</button>
+          <button>Dashboard</button>
+        </div>
         <ContentBox>
           <div className="space-y-6">
             <LabelBoxInput />

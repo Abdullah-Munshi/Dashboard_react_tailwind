@@ -20,6 +20,35 @@
   font-size: 14px !important;
   margin-left: 3px;
 }
+
+.tabs button:not(:last-child) {
+  margin-right: 20px;
+}
+.tabs button {
+  margin-bottom: 15px;
+  height: 52px;
+  padding: 10px 24px;
+  background-color: #353535;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.tabs button.active {
+  background-color: #52b86e;
+}
+
+@media screen and (max-width: 640px) {
+  .tabs button {
+    margin-bottom: 0;
+    height: 48px;
+    padding: 7px 24px;
+    font-size: 15px;
+  }
+  .tabs button:not(:last-child) {
+    margin-right: 0;
+  }
+}
 .text-shadow-1 {
   text-shadow: 0 4px 5px #00000054;
 }
