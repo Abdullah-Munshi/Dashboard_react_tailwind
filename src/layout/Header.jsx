@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import Drawer from "../components/dashboard/Drawer";
-import { Overlay } from "../components/Common";
+import { Overlay } from "../components/common/Utils";
 
 import IconLogo from "../assets/logo.png";
 import IconWallet from "../assets/wallet.png";

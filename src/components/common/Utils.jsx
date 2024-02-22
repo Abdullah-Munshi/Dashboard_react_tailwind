@@ -17,5 +17,16 @@ export const Container = ({ children }) => {
 };
 
 export const ContentBox = ({ children }) => {
-  return <div className="bg-[#353535] p-6 rounded-lg_next">{children}</div>;
+  return (
+    <div className="bg-[#353535] p-4 sm:p-6 rounded-lg_next">{children}</div>
+  );
+};
+export const Overlay = ({ overlay }) => {
+  return (
+    <div
+      className={`${
+        overlay ? "opacity-100 visible" : "opacity-0 invisible"
+      } fixed w-screen h-screen top-0 left-0 right-0 bg-black/60 transition duration-300 z-40 `}
+    ></div>
+  );
 };
