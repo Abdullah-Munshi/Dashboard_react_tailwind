@@ -1,14 +1,16 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import { useMediaQuery } from "react-responsive";
-import ShortHeaderInfo from "../components/dashboard/ShortHeaderInfo";
-import logo from "../assets/logo.png";
-import currency from "../assets/currency.png";
-import wallet from "../assets/wallet.png";
-import user from "../assets/user.png";
-import iconPeople from "../assets/people.png";
 import Drawer from "../components/dashboard/Drawer";
-import { Overlay } from "../components/Utility";
+import { Overlay } from "../components/Common";
+
+import IconLogo from "../assets/logo.png";
+import IconWallet from "../assets/wallet.png";
+import IconNetwork from "../assets/network.png";
+
+import Logo from "../components/header/Logo";
+import UserInfo from "../components/header/UserInfo";
+import Network from "../components/header/Network";
+import { ButtonGray } from "../components/common/Buttons";
 
 const Header = () => {
   const [drawer, setDrawer] = useState(false);
@@ -17,35 +19,24 @@ const Header = () => {
     setDrawer(false);
   };
   return (
-    <header className="bg-gradient-to-b from-[#373737] to-[#1E1E1E] px-4 md:px-6 py-3 lg:py-4 relative z-10 shadow-lg shadow-black/50">
+    <header className="header bg-transparent px-4 py-[14px] md:px-6 md:py-5 lg:px-8 lg:py-6">
       <Overlay overlay={drawer && isSmallScreen} />
-      <div className="grid grid-cols-[110px_auto] gap-10 items-center relative z-50">
-        <Link className="">
-          <img src={logo} alt="logo" className="w-14 md:w-16 xl:w-[100px]" />
-        </Link>
-        <div className="hidden xl:block space-y-3">
-          <div className="flex items-center justify-end space-x-5 xl:space-x-10">
-            <ShortHeaderInfo
-              icon={currency}
-              title="BNB Balance"
-              value="5.3BNB"
-            />
-            <ShortHeaderInfo icon={wallet} title="WALLET" value="0x123456789" />
-            <ShortHeaderInfo icon={user} title="Username" value="Level 10" />
-          </div>
-          <span className=" bg-[#0B0B0B] w-full h-[1px] my-4 block"></span>
-          <div className="grid grid-cols-[auto_40px] items-center gap-4">
-            <div className="space-y-1 text-right">
-              <h4 className="text-white text-sm font-medium leading-tight">
-                Personal Inviter Link
-              </h4>
-              <Link className="text-primary text-lg font-bold inline-block leading-tight">
-                https://heal.estate.io/grantor/username
-              </Link>
-            </div>
-            <img className="max-w-full" src={iconPeople} alt="ppl" />
+      <div className="flex items-center justify-between">
+        <Logo logo={IconLogo} />
+        <div className="hidden md:flex space-x-10">
+          <UserInfo
+            icon={IconWallet}
+            label="Connected Wallet"
+            value="0x123456789"
+          />
+          <div className="flex items-center space-x-3">
+            <Network icon={IconNetwork} />
+            <ButtonGray onClick={() => console.log("Disconnect")}>
+              Disconnect
+            </ButtonGray>
           </div>
         </div>
+
         <div
           className={`${
             drawer && isSmallScreen ? "translate-x-0" : "translate-x-full"
@@ -56,7 +47,7 @@ const Header = () => {
 
         <button
           onClick={() => setDrawer(true)}
-          className="mobile-bar ml-auto xl:hidden"
+          className="mobile-bar ml-auto md:hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

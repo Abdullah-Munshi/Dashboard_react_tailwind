@@ -4,12 +4,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#C1FF72",
+        primary: "#52B86E",
         secondary: "#F9F293",
       },
       fontFamily: {
-        sans: ["Montserrat Alternates", "sans-serif"],
-        russoOne: ["Russo One", "sans-serif"],
+        sans: ["Inter", "sans-serif"],
+        aleo: ["Aleo", "sans-serif"],
+      },
+      borderRadius: {
+        lg_next: "10px",
       },
       backgroundImage: {
         primaryGradient_to_b: "linear-gradient(to bottom, #C1FF72, #60AB00)",

@@ -1,17 +1,4 @@
 import React from "react";
-import ShortHeaderInfo from "./ShortHeaderInfo";
-import currency from "../../assets/currency.png";
-import wallet from "../../assets/wallet.png";
-import user from "../../assets/user.png";
-import i1 from "../../assets/i-1.png";
-import i2 from "../../assets/i-2.png";
-import i3 from "../../assets/i-3.png";
-import i4 from "../../assets/i-4.png";
-import i5 from "../../assets/i-5.png";
-import i6 from "../../assets/i-6.png";
-import i7 from "../../assets/i-7.png";
-import i8 from "../../assets/i-8.png";
-import MenuLink from "./MenuLink";
 
 const Drawer = ({ onCloseDrawer }) => {
   return (
@@ -29,23 +16,10 @@ const Drawer = ({ onCloseDrawer }) => {
         </svg>
       </button>
 
-      <div className="space-y-5 mb-4">
-        <ShortHeaderInfo icon={currency} title="BNB BAlANCE" value="23 BNB" />
-        <ShortHeaderInfo icon={wallet} title="WALLET" value="0x13..3Da" />
-        <ShortHeaderInfo icon={user} title="Username" value="ID 13" />
-      </div>
+      <div className="space-y-5 mb-4"></div>
 
       <div className="space-y-7 mt-7">
-        <ul>
-          <MenuLink icon={i1} text="Dashboard" />
-          <MenuLink icon={i2} text="How it works" />
-          <MenuLink icon={i3} text="My Referrals" />
-          <MenuLink icon={i4} text="Payments" />
-          <MenuLink icon={i5} text="Alert System" />
-          <MenuLink icon={i6} text="Activities" />
-          <MenuLink icon={i7} text="View Contract" />
-          <MenuLink icon={i8} text="Logout" />
-        </ul>
+        <ul></ul>
       </div>
     </div>
   );

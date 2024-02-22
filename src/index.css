@@ -1,6 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header .btn-gray {
+  height: 47px;
+}
+.footer .btn-gray {
+  width: 154px;
+}
+.sidebar .btn-primary,
+.sidebar .btn-gray {
+  width: 100%;
+  font-size: 16px;
+  height: 55px;
+}
+.stats-content .sub {
+  font-size: 14px !important;
+  margin-left: 3px;
+}
 .text-shadow-1 {
   text-shadow: 0 4px 5px #00000054;
 }
