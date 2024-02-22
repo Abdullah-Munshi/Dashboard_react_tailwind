@@ -35,7 +35,7 @@ export const ButtonPrimaryType2 = ({ children, onClick }) => {
   return (
     <button
       onClick={onclick}
-      className="btn-primary border border-primary bg-primary text-white text-base font-bold px-4 py-4 rounded-xl"
+      className="btn-primary border border-primary bg-primary text-white text-base font-bold px-4 py-[14px] rounded-xl flex items-center justify-between min-w-[245px]"
     >
       {children}
     </button>

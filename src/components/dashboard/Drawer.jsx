@@ -1,4 +1,7 @@
 import React from "react";
+import { ButtonGray, ButtonPrimary } from "../common/Buttons";
+import Stats from "./Stats";
+import IconDoller from "../../assets/doller.png";
 
 const Drawer = ({ onCloseDrawer }) => {
   return (
@@ -16,10 +19,27 @@ const Drawer = ({ onCloseDrawer }) => {
         </svg>
       </button>
 
-      <div className="space-y-5 mb-4"></div>
-
-      <div className="space-y-7 mt-7">
-        <ul></ul>
+      <div className="sidebar space-y-5 mb-4">
+        <ButtonPrimary>Payment Gateway</ButtonPrimary>
+        <ButtonGray>Payout System</ButtonGray>
+        <ul className="bg-[#474747] rounded-lg_next block">
+          <li className="border-b border-[#313131] last:border-0 px-6 py-5">
+            <Stats
+              icon={IconDoller}
+              label="Payments"
+              value="$124<span class='sub'>(24)</span>"
+              subLabel="$124 (10) today"
+            />
+          </li>
+          <li className="block px-6 py-5">
+            <Stats
+              icon={IconDoller}
+              label="Payments"
+              value="$124<span class='sub'>(24)</span>"
+              subLabel="$124 (10) today"
+            />
+          </li>
+        </ul>
       </div>
     </div>
   );

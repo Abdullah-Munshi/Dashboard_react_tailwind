@@ -13,7 +13,7 @@ const Dashboard = () => {
       <Header />
       <Container>
         <div className="lg:grid grid-cols-[250px_auto] gap-8">
-          <div className="sidebar space-y-4">
+          <div className="sidebar space-y-4 hidden lg:block">
             <ButtonPrimary>Payment Gateway</ButtonPrimary>
             <ButtonGray>Payout System</ButtonGray>
             <ul className="bg-[#474747] rounded-lg_next block">
