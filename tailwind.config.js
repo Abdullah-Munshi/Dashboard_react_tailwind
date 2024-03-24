@@ -9,6 +9,8 @@ module.exports = withMT({
         secondary: "#F9F293",
         richBlack: "#01161E",
         gray: "#7B7B7B",
+        lightGreen: "#B5E4CA",
+        lightBlue: "#B1E5FC",
       },
       fontFamily: {
         sans: ["Outfit", "sans-serif"],

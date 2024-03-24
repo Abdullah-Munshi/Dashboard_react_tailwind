@@ -31,15 +31,32 @@ export const Button = ({ variant, type, classes, onClick, children }) => {
   );
 };
 
-export const TableTitle = ({ title, buttonText }) => {
+export const TitlePrimary = ({ children }) => {
+  return <h2 className="text-richBlack text-[32px] font-medium">{children}</h2>;
+};
+export const TitleSecondary = ({ variant, children }) => {
+  let classes;
+  switch (variant) {
+    case "light-blue":
+      classes = "bg-[#B1E5FC]";
+      break;
+    case "light-orange":
+      classes = "bg-[#FFBC99]";
+      break;
+    default:
+      classes = "bg-[#B1E5FC]";
+  }
   return (
-    <div className="flex items-center justify-between">
-      <h3 className="text-primary font-bold text-base">{title}</h3>
-      <Button variant="gray" classes="btn-size-2">
-        {buttonText}
-      </Button>
-    </div>
+    <h2 className="text-[#1A1D1F] text-xl font-semibold inline-flex items-center">
+      <span
+        className={`${classes} w-4 h-8 rounded-sm inline-block mr-3`}
+      ></span>
+      {children}
+    </h2>
   );
+};
+export const CommonCard = ({ children }) => {
+  return <div className="bg-[#FCFCFC] rounded-lg p-6">{children}</div>;
 };
 export const Overlay = ({ overlay }) => {
   return (
