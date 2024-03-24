@@ -7,6 +7,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Dashboard from "./pages/Dashboard";
 import Auth from "./pages/Auth";
+import { ThemeProvider } from "@material-tailwind/react";
 const router = createBrowserRouter([
   { path: "/auth", element: <Auth /> },
   {
@@ -19,7 +20,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <RouterProvider router={router}>
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </RouterProvider>
   </React.StrictMode>
 );

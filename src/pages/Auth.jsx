@@ -1,39 +1,91 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Login from "../components/auth/Login";
-import Register from "../components/auth/Register";
-import authBg from "../assets/auth-bg.webp";
-import logo from "../assets/logo.png";
+import { Button, Input } from "@material-tailwind/react";
+import imgOne from "../assets/img-1.png";
+import arwLeftSqure from "../assets/arw-left-square.svg";
+import IconWallet from "../assets/wallet.png";
+
+const Title = ({ children }) => {
+  return (
+    <h2 className="text-richBlack font-semibold text-[44px] mb-2">
+      {children}
+    </h2>
+  );
+};
 
 const Auth = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
-    <div className="min-h-screen relative">
-      <div
-        className="w-full h-full absolute top-0 start-0 bottom-0 end-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${authBg})` }}
-      ></div>
-      <div className="min-h-screen flex items-center z-10 relative py-8 md:py-10 px-4 md:px-6">
-        <main className="max-w-[1050px] basis-full mx-auto">
-          <div className="text-center mb-14 md:mb-20">
-            <Link to="/dashboard" className="inline-block">
-              <img
-                className="w-[90px] md:w-[120px] lg:w-[150px] block"
-                src={logo}
-                alt="Logo"
-              />
-            </Link>
+    <div className="min-h-screen relative bg-white">
+      <main className="grid grid-cols-2 items-center relative min-h-screen">
+        <div className="px-16 py-14">
+          <a
+            href="#"
+            className="text-gray font-medium text-lg inline-flex items-center gap-2"
+          >
+            <img src={arwLeftSqure} alt="<" />
+            Back to Home
+          </a>
+
+          <div className="space-y-8">
+            <div>
+              <Title>
+                1. <span className="inline-block highlight-title">Connect</span>{" "}
+                your wallet ?
+              </Title>
+              <Button
+                variant="gradient"
+                className="bg-primaryGradient_to_right flex items-center gap-3 font-semibold font-sans text-lg rounded-full capitalize"
+              >
+                Connect <img className="w-6 h-6" src={IconWallet} alt="i" />
+              </Button>
+            </div>
+            <div>
+              <Title>
+                2.
+                <span className="inline-block highlight-title">
+                  Empower
+                </span>{" "}
+                Your Experience
+              </Title>
+              <p className="text-gray text-lg leading-snug">
+                Unlock the full potential of NewUnity by logging in or <br />
+                registering below.
+              </p>
+              <div className="mt-6">
+                <Button
+                  variant="gradient"
+                  className="bg-primaryGradient_to_right flex items-center gap-3 font-semibold font-sans text-lg rounded-full capitalize"
+                >
+                  Log in <img className="w-6 h-6" src={IconWallet} alt="i" />
+                </Button>
+                <Button
+                  variant="gradient"
+                  className="bg-primaryGradient_to_right flex items-center gap-3 font-semibold font-sans text-lg rounded-full capitalize"
+                >
+                  Register <img className="w-6 h-6" src={IconWallet} alt="i" />
+                </Button>
+              </div>
+            </div>
+            <div>
+              <Title>Referral Code ?</Title>
+              <div>
+                <Input variant="static" label="Static" placeholder="Code" />
+              </div>
+              <Button
+                variant="gradient"
+                className="bg-primaryGradient_to_right flex items-center gap-3 font-semibold font-sans text-lg rounded-full capitalize"
+              >
+                Proceed
+              </Button>
+            </div>
           </div>
-          <div className="border-[3px] border-[#FBBA04] rounded-3xl bg-gradient-to-b from-[#181818]/80 to-[#000000]/80 min-h-[370px] shadow-lg shadow-black/40 px-4 md:px-10 pb-5">
-            <div>{isLoggedIn ? <Login /> : <Register />}</div>
+        </div>
+        <div className="h-screen w-1/2 absolute right-0 top-0 bottom-0 p-7">
+          <div className="bg-[#A1CDFF] grid place-content-center p-6 h-full rounded-[50px]">
+            <img src={imgOne} alt="img" className="max-w-[400px] max-h-full" />
           </div>
-          <div className="text-center mt-10 md:mt-16">
-            <p className="bg-[#A5A6A8] px-5 pt-2.5 pb-2 rounded-lg text-sm md:text-base inline-block font-semibold text-black shadow-lg shadow-black/20">
-              © 2024 Heal.Estate - All Rights Reserved | v1.0.0
-            </p>
-          </div>
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
   );
 };

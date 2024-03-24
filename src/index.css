@@ -1,8 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.text-shadow-1 {
-  text-shadow: 0 4px 5px #00000054;
+.highlight-title {
+  background: linear-gradient(to right, #7dccff, #009cff);
+  background-clip: text;
+  color: transparent;
 }
 .view-contract {
   color: #000;

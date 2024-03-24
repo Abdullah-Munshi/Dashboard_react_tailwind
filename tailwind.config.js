@@ -1,21 +1,22 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
         primary: "#C1FF72",
         secondary: "#F9F293",
+        richBlack: "#01161E",
+        gray: "#7B7B7B",
       },
       fontFamily: {
-        sans: ["Montserrat Alternates", "sans-serif"],
-        russoOne: ["Russo One", "sans-serif"],
+        sans: ["Outfit", "sans-serif"],
       },
       backgroundImage: {
-        primaryGradient_to_b: "linear-gradient(to bottom, #C1FF72, #60AB00)",
-        secondaryGradient_to_b: "linear-gradient(to bottom, #CA00EB, #3B0044)",
+        primaryGradient_to_right: "linear-gradient(to right, #7DCCFF, #009CFF)",
       },
     },
   },
   plugins: [],
-};
+});
