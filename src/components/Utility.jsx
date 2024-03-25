@@ -27,5 +27,7 @@ export const TitleSecondary = ({ variant, children }) => {
   );
 };
 export const CommonCard = ({ children }) => {
-  return <div className="bg-[#FCFCFC] rounded-lg p-6">{children}</div>;
+  return (
+    <div className="bg-[#FCFCFC] rounded-lg px-4 py-5 md:p-6">{children}</div>
+  );
 };
