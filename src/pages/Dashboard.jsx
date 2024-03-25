@@ -83,23 +83,23 @@ const Dashboard = () => {
                   </div>
                   <div>
                     <div>
-                      <div class="pb-6 overflow-scroll">
-                        <table class="w-full text-left table-auto min-w-max">
+                      <div className="pb-6 overflow-scroll">
+                        <table className="w-full text-left table-auto min-w-max">
                           <tbody>
                             <tr>
-                              <td class="p-4 pl-0 ">
-                                <div class="flex flex-col">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
+                              <td className="p-4 pl-0 ">
+                                <div className="flex flex-col">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
                                     Stats text
                                   </p>
-                                  <p class="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
+                                  <p className="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
                                     Stats description
                                   </p>
                                 </div>
                               </td>
-                              <td class="p-4 pr-0 ">
-                                <div class="flex flex-col items-end">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
+                              <td className="p-4 pr-0 ">
+                                <div className="flex flex-col items-end">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
                                     $2,453.80
                                   </p>
                                   <span className="inline-block bg-[#EAFAE5] rounded-[4px] text-xs font-bold text-[#83BF6E] px-3 py-1">
@@ -109,19 +109,19 @@ const Dashboard = () => {
                               </td>
                             </tr>
                             <tr>
-                              <td class="p-4 pl-0 ">
-                                <div class="flex flex-col">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
+                              <td className="p-4 pl-0 ">
+                                <div className="flex flex-col">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
                                     Stats text
                                   </p>
-                                  <p class="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
+                                  <p className="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
                                     Stats description
                                   </p>
                                 </div>
                               </td>
-                              <td class="p-4 pr-0">
-                                <div class="flex flex-col items-end">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
+                              <td className="p-4 pr-0">
+                                <div className="flex flex-col items-end">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
                                     $2,453.80
                                   </p>
                                   <span className="inline-block bg-[#EAFAE5] rounded-[4px] text-xs font-bold text-[#83BF6E] px-3 py-1">
@@ -131,19 +131,19 @@ const Dashboard = () => {
                               </td>
                             </tr>
                             <tr>
-                              <td class="p-4 pl-0 ">
-                                <div class="flex flex-col">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
+                              <td className="p-4 pl-0 ">
+                                <div className="flex flex-col">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
                                     Stats text
                                   </p>
-                                  <p class="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
+                                  <p className="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
                                     Stats description
                                   </p>
                                 </div>
                               </td>
-                              <td class="p-4 pr-0 ">
-                                <div class="flex flex-col items-end">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
+                              <td className="p-4 pr-0 ">
+                                <div className="flex flex-col items-end">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
                                     $2,453.80
                                   </p>
                                   <span className="inline-block bg-[#EAFAE5] rounded-[4px] text-xs font-bold text-[#83BF6E] px-3 py-1">
@@ -153,19 +153,19 @@ const Dashboard = () => {
                               </td>
                             </tr>
                             <tr>
-                              <td class="p-4 pl-0 ">
-                                <div class="flex flex-col">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
+                              <td className="p-4 pl-0 ">
+                                <div className="flex flex-col">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
                                     Stats text
                                   </p>
-                                  <p class="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
+                                  <p className="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
                                     Stats description
                                   </p>
                                 </div>
                               </td>
-                              <td class="p-4 pr-0">
-                                <div class="flex flex-col items-end">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
+                              <td className="p-4 pr-0">
+                                <div className="flex flex-col items-end">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
                                     $2,453.80
                                   </p>
                                   <span className="inline-block bg-[#EAFAE5] rounded-[4px] text-xs font-bold text-[#83BF6E] px-3 py-1">
@@ -175,19 +175,19 @@ const Dashboard = () => {
                               </td>
                             </tr>
                             <tr>
-                              <td class="p-4 pl-0 ">
-                                <div class="flex flex-col">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
+                              <td className="p-4 pl-0 ">
+                                <div className="flex flex-col">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
                                     Stats text
                                   </p>
-                                  <p class="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
+                                  <p className="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
                                     Stats description
                                   </p>
                                 </div>
                               </td>
-                              <td class="p-4 pr-0">
-                                <div class="flex flex-col items-end">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
+                              <td className="p-4 pr-0">
+                                <div className="flex flex-col items-end">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
                                     $2,453.80
                                   </p>
                                   <span className="inline-block bg-[#EAFAE5] rounded-[4px] text-xs font-bold text-[#83BF6E] px-3 py-1">
@@ -197,19 +197,19 @@ const Dashboard = () => {
                               </td>
                             </tr>
                             <tr>
-                              <td class="p-4 pl-0 ">
-                                <div class="flex flex-col">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
+                              <td className="p-4 pl-0 ">
+                                <div className="flex flex-col">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
                                     Stats text
                                   </p>
-                                  <p class="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
+                                  <p className="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
                                     Stats description
                                   </p>
                                 </div>
                               </td>
-                              <td class="p-4 pr-0 ">
-                                <div class="flex flex-col items-end">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
+                              <td className="p-4 pr-0 ">
+                                <div className="flex flex-col items-end">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
                                     $2,453.80
                                   </p>
                                   <span className="inline-block bg-[#EAFAE5] rounded-[4px] text-xs font-bold text-[#83BF6E] px-3 py-1">
@@ -219,19 +219,19 @@ const Dashboard = () => {
                               </td>
                             </tr>
                             <tr>
-                              <td class="p-4 pl-0 ">
-                                <div class="flex flex-col">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
+                              <td className="p-4 pl-0 ">
+                                <div className="flex flex-col">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F]">
                                     Stats text
                                   </p>
-                                  <p class="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
+                                  <p className="block font-sans text-[15px] antialiased font-normal leading-normal text-[#7A7A7A]">
                                     Stats description
                                   </p>
                                 </div>
                               </td>
-                              <td class="p-4 pr-0">
-                                <div class="flex flex-col items-end">
-                                  <p class="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
+                              <td className="p-4 pr-0">
+                                <div className="flex flex-col items-end">
+                                  <p className="block font-sans text-[15px] antialiased font-semibold leading-normal text-[#1A1D1F] mb-1">
                                     $2,453.80
                                   </p>
                                   <span className="inline-block bg-[#EAFAE5] rounded-[4px] text-xs font-bold text-[#83BF6E] px-3 py-1">

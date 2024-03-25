@@ -17,9 +17,9 @@ const TABLE_ROWS = [
     amountWithdrawn: "$128,899.00",
   },
   {
-    month: "Oct 2021",
+    month: "Nov 2021",
     status: "Paid",
-    method: "Paypal",
+    method: "SWIFT",
     earnings: "$128,899.00",
     amountWithdrawn: "$128,899.00",
   },

@@ -4,34 +4,17 @@ import Chart from "react-apexcharts";
 const StatisticsChart = () => {
   const series = [
     {
-      name: "Data",
-      data: [
-        { x: 0, y: 0 },
-        { x: 12, y: 50 },
-        { x: 13, y: 100 },
-        { x: 14, y: 150 },
-        { x: 15, y: 200 },
-        { x: 16, y: 150 },
-        { x: 17, y: 100 },
-      ],
+      name: "series-1",
+      data: [0, 50, 100, 150, 200],
     },
   ];
 
   const options = {
     chart: {
-      height: 350,
-      type: "line",
+      id: "Line-1",
     },
     xaxis: {
-      labels: {
-        formatter: function (val) {
-          return val;
-        },
-      },
-    },
-    yaxis: {
-      min: 0,
-      max: 200,
+      categories: [0, 12, 13, 14, 15, 16, 17],
     },
   };
 
