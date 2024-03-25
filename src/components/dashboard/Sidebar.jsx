@@ -36,7 +36,7 @@ const Sidebar = () => {
     setOpen(open === value ? 0 : value);
   };
   return (
-    <Card className="min-h-[calc(100vh-5rem)] w-full pr-6 max-w-[20rem] bg-richBlack">
+    <Card className="sidebar min-h-[calc(100vh-5rem)] w-full pr-6 max-w-[20rem] bg-richBlack">
       <div className="mb-4 mt-3 px-3">
         <img className="w-[210px]" src={logo} alt="brand" />
       </div>

@@ -8,24 +8,23 @@ import {
 import { Button } from "@material-tailwind/react";
 import Sidebar from "../components/dashboard/Sidebar";
 import RecentActivity from "../components/dashboard/RecentActivity";
-import graph from "../assets/graph.png";
 import StatisticsChart from "../components/dashboard/StatisticsChart";
 
 const Dashboard = () => {
   return (
     <>
-      <div className="bg-primaryGradient_to_right p-3 md:p-6  min-h-screen">
-        <div className="bg-richBlack rounded-3xl md:rounded-[50px] p-3 md:p-6 xl:grid grid-cols-[290px_auto]">
+      <div className="bg-primaryGradient_to_right p-3 xl:p-6  min-h-screen">
+        <div className="bg-richBlack rounded-3xl xl:rounded-[50px] p-3 xl:p-6 xl:grid grid-cols-[290px_auto]">
           <div className="hidden xl:block">
             <Sidebar />
           </div>
-          <div className="bg-[#F4F4F4] rounded-3xl md:rounded-[30px] overflow-hidden">
+          <div className="bg-[#F4F4F4] rounded-3xl xl:rounded-[30px] overflow-hidden">
             <Header />
-            <div className="px-8 py-6">
+            <div className="px-3 xl:px-8 py-4 xl:py-6">
               <div className="mb-4">
                 <TitlePrimary>Home</TitlePrimary>
               </div>
-              <div className="grid grid-cols-[2fr_1fr] gap-3">
+              <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-6 lg:gap-3">
                 <CommonCard>
                   <div className="text-center">
                     <TitleSecondary variant="light-orange">

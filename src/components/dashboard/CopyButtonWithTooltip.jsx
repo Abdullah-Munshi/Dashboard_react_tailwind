@@ -15,7 +15,7 @@ export default function CopyButtonWithTooltip() {
           copy("https://app.newunity.io/register/hello");
           setCopied(true);
         }}
-        className="flex items-center gap-x-3 px-5 py-2 lowercase bg-[#F4F4F4] shadow-none hover:shadow-none rounded-[100px]"
+        className="w-full justify-between flex items-center gap-x-3 px-5 py-2 lowercase bg-[#F4F4F4] shadow-none hover:shadow-none rounded-[100px]"
       >
         <p className="text-sm font-medium text-[#303030] text-left">
           <span className="block text-[#949494] text-xs">
